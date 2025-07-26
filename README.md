@@ -1,16 +1,58 @@
-## Hi there 👋
+<h1 align="center">👋 こんにちは、Lê Phạm Thành Đạt です！</h1>
 
-<!--
-**liliusgamer/liliusgamer** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<p align="center">
+  🌱 Software Engineering Student | 💻 Web & AI Enthusiast <br/>
+  🎓 Phenikaa University – 日本ITプログラム
+</p>
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 📌 自己紹介 (About Me)
+- 🔭 今は「手話認識Webアプリ」プロジェクトに取り組んでいます。
+- 🧠 興味のある分野：機械学習・コンピュータビジョン・DX推進
+- 🌏 日本語・英語・ベトナム語が話せます。
+- ✍️ 趣味：イラストを描くこと、開発ブログを書くこと
+
+---
+
+### 🛠 使用言語・ツール (Tech Stack)
+
+![Python](https://img.shields.io/badge/-Python-333?style=flat&logo=python)
+![JavaScript](https://img.shields.io/badge/-JavaScript-333?style=flat&logo=javascript)
+![React](https://img.shields.io/badge/-React-333?style=flat&logo=react)
+![Node.js](https://img.shields.io/badge/-Node.js-333?style=flat&logo=node.js)
+![HTML5](https://img.shields.io/badge/-HTML5-333?style=flat&logo=html5)
+![CSS3](https://img.shields.io/badge/-CSS3-333?style=flat&logo=css3)
+![Git](https://img.shields.io/badge/-Git-333?style=flat&logo=git)
+![VS Code](https://img.shields.io/badge/-VS%20Code-333?style=flat&logo=visual-studio-code)
+
+---
+
+### 🌟 主なプロジェクト (Featured Projects)
+
+- 🖐️ [DevShare-Lite]([https://github.com/yourusername/sign-lang-app](https://github.com/liliusgamer/DevShare-Lite))  
+  
+
+---
+
+### 📈 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&theme=radical" alt="GitHub Stats" />
+  <br/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=yourusername&layout=compact&theme=radical" alt="Top Langs" />
+</p>
+
+---
+
+### 📫 連絡先 (Contact)
+
+- 📧 Email: datpltn205@gmail.com
+- 🔗 LinkedIn: [linkedin.com/in/thànhđạt](https://www.linkedin.com/in/th%C3%A0nh-%C4%91%E1%BA%A1t-0ba998369/)
+
+---
+
+<p align="center">
+  Thank you for visiting my profile! <br/>
+  ご覧いただき、ありがとうございました 😊
+</p>
