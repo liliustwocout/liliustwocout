@@ -25,6 +25,13 @@
 ![CSS3](https://img.shields.io/badge/-CSS3-333?style=flat&logo=css3)
 ![Git](https://img.shields.io/badge/-Git-333?style=flat&logo=git)
 ![VS Code](https://img.shields.io/badge/-VS%20Code-333?style=flat&logo=visual-studio-code)
+![C](https://img.shields.io/badge/-C-333?style=flat&logo=c)
+![C++](https://img.shields.io/badge/-C++-333?style=flat&logo=c%2B%2B)
+![C#](https://img.shields.io/badge/-C%23-333?style=flat&logo=c-sharp)
+![Java](https://img.shields.io/badge/-Java-333?style=flat&logo=java)
+![SQL](https://img.shields.io/badge/-SQL-333?style=flat&logo=postgresql)
+![Unity](https://img.shields.io/badge/-Unity-333?style=flat&logo=unity)
+![Django](https://img.shields.io/badge/-Django-333?style=flat&logo=django)
 
 ---
 
