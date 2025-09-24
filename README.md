@@ -1,7 +1,7 @@
 <h1 align="center">👋 こんにちは、Lê Phạm Thành Đạt です！</h1>
 
 <p align="center">
-  🌱 Software Engineering Student | 💻 Web & AI Enthusiast <br/>
+  🌱 Full-Stack Engineering Student | 💻 Web & AI Enthusiast <br/>
   🎓 Phenikaa University – 日本ITプログラム
 </p>
 
