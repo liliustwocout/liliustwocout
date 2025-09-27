@@ -15,7 +15,7 @@
 
 ---
 
-### 🛠 使用言語・ツール (Tech Stack)
+### 🛠 使用言語 (Tech Stack)
 
 ![Python](https://img.shields.io/badge/-Python-333?style=flat&logo=python)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-333?style=flat&logo=javascript)
