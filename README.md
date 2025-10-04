@@ -15,6 +15,13 @@
 
 ---
 
+### 🎯 将来の目標 (My Goals)
+- 🕒 **短期（〜3年）**: React・Djangoを中心としたFull-stackスキルを確立し、DockerやCI/CDを活用した開発環境に慣れること。  
+- 🚀 **中期（〜5年）**: チームで小規模プロジェクトをリードできるFull-stackエンジニアになること。  
+- 🌟 **長期（5年以上）**: AI技術を取り入れたシステムやサービス開発に挑戦し、社会に新しい価値を生み出すこと。  
+
+---
+
 ### 🛠 使用技術 (Tech Stack)
 
 ![Python](https://img.shields.io/badge/-Python-333?style=flat&logo=python)
@@ -37,22 +44,22 @@
 
 ### 🌟 主なプロジェクト (Featured Projects)
 
-- 🖐️ [Sign Language Recognition System](https://github.com/liliusgamer/Sign-Language-Recognition)  
+- 🖐️ [Sign Language Recognition System](https://github.com/liliustwocout/Sign-Language-Recognition)  
   聴覚障害者のコミュニケーション支援を目的とした、AIを活用したリアルタイム手話認識システム。  
-  **Tech:** TensorFlow.js, CNN, KNN, HTML/CSS/JS  
+  **Tech:** TensorFlow.js, CNN, KNN, Transfer Learning, HTML/CSS/JS  
 
-- 🧩 [DevShare Lite](https://github.com/liliusgamer/DevShare-Lite)  
+- 🧩 [DevShare Lite](https://github.com/liliustwocout/DevShare-Lite)  
   ITコミュニティの知識共有と交流を促進するFull-Stackプラットフォーム。  
-  **Tech:** Django, React, SQLite, Tailwind CSS  
+  **Tech:** Django, React, SQLite, Tailwind CSS, JWT  
 
 ---
 
 ### 📈 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=liliusgamer&show_icons=true&theme=radical" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api?username=liliustwocout&show_icons=true&theme=radical" alt="GitHub Stats" />
   <br/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=liliusgamer&layout=compact&theme=radical" alt="Top Langs" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=liliustwocout&layout=compact&theme=radical" alt="Top Langs" />
 </p>
 
 ---
