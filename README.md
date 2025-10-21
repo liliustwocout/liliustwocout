@@ -39,6 +39,8 @@
 ![Java](https://img.shields.io/badge/-Java-333?style=flat&logo=java)
 ![SQL](https://img.shields.io/badge/-SQL-333?style=flat&logo=postgresql)
 ![Unity](https://img.shields.io/badge/-Unity-333?style=flat&logo=unity)
+![TypeScript](https://img.shields.io/badge/-TypeScript-333?style=flat&logo=typescript)
+![Next](https://img.shields.io/badge/-Next-333?style=flat&logo=next)
 
 ---
 
