@@ -1,79 +1,182 @@
-<h1 align="center">👋 こんにちは、Lê Phạm Thành Đạt です！</h1>
+<div align="center">
 
-<p align="center">
-  🌱 Full-Stack Engineering Student | 🤖 AI Enthusiast <br/>
-  🎓 Phenikaa University – 日本ITプログラム
-</p>
+# こんにちは 👋  
+## Lê Phạm Thành Đạt
 
----
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=24&duration=2500&pause=1000&color=00F7FF&center=true&vCenter=true&width=700&lines=System+Engineering+Student;Full-Stack+Developer;AI+%26+Machine+Learning+Enthusiast;Building+Modern+Web+Applications;Welcome+to+my+GitHub+Profile" />
 
-### 📌 自己紹介 (About Me)
-- 🔭 現在は「手話認識システム」と「DevShare Lite」プロジェクトに取り組んでいます。  
-- 🧠 興味のある分野：Full-Stack開発・AI・機械学習・DX推進  
-- 🌏 日本語・英語・ベトナム語が話せます。  
-- ✍️ 趣味：イラストを描くこと、開発ブログを書くこと  
+<br/>
 
----
+<img src="https://img.shields.io/badge/System%20Engineering-Phenikaa%20University-0A192F?style=for-the-badge&logo=academia&logoColor=00F7FF"/>
+<img src="https://img.shields.io/badge/Focus-AI%20%2F%20FullStack-111827?style=for-the-badge&logo=openai&logoColor=00F7FF"/>
+<img src="https://img.shields.io/badge/Location-Vietnam-0A192F?style=for-the-badge&logo=googlemaps&logoColor=00F7FF"/>
 
-### 🎯 将来の目標 (My Goals)
-- 🕒 **短期（〜3年）**: React・Djangoを中心としたFull-stackスキルを確立し、DockerやCI/CDを活用した開発環境に慣れること。  
-- 🚀 **中期（〜5年）**: チームで小規模プロジェクトをリードできるFull-stackエンジニアになること。  
-- 🌟 **長期（5年以上）**: AI技術を取り入れたシステムやサービス開発に挑戦し、社会に新しい価値を生み出すこと。  
+<br/><br/>
+
+<img src="https://komarev.com/ghpvc/?username=liliustwocout&label=PROFILE+VIEWS&color=0e75b6&style=flat-square" />
+
+</div>
 
 ---
 
-### 🛠 使用技術 (Tech Stack)
+# 🧠 About Me
 
-![Python](https://img.shields.io/badge/-Python-333?style=flat&logo=python)
-![JavaScript](https://img.shields.io/badge/-JavaScript-333?style=flat&logo=javascript)
-![React](https://img.shields.io/badge/-React-333?style=flat&logo=react)
-![Django](https://img.shields.io/badge/-Django-333?style=flat&logo=django)
-![HTML5](https://img.shields.io/badge/-HTML5-333?style=flat&logo=html5)
-![CSS3](https://img.shields.io/badge/-CSS3-333?style=flat&logo=css3)
-![Git](https://img.shields.io/badge/-Git-333?style=flat&logo=git)
-![Docker](https://img.shields.io/badge/-Docker-333?style=flat&logo=docker)
-![VS Code](https://img.shields.io/badge/-VS%20Code-333?style=flat&logo=visual-studio-code)
-![C](https://img.shields.io/badge/-C-333?style=flat&logo=c)
-![C++](https://img.shields.io/badge/-C++-333?style=flat&logo=c%2B%2B)
-![C#](https://img.shields.io/badge/-C%23-333?style=flat&logo=c-sharp)
-![Java](https://img.shields.io/badge/-Java-333?style=flat&logo=java)
-![SQL](https://img.shields.io/badge/-SQL-333?style=flat&logo=postgresql)
-![Unity](https://img.shields.io/badge/-Unity-333?style=flat&logo=unity)
-![TypeScript](https://img.shields.io/badge/-TypeScript-333?style=flat&logo=typescript)
-![Next](https://img.shields.io/badge/-Next-333?style=flat&logo=next)
+```yaml
+Name: Lê Phạm Thành Đạt
+Major: System Engineering
+University: Phenikaa University
+Role: Full-Stack Developer / AI Enthusiast
 
----
+Languages:
+  - Vietnamese 🇻🇳
+  - Japanese 🇯🇵
+  - English 🇺🇸
 
-### 🌟 主なプロジェクト (Featured Projects)
+Interests:
+  - Artificial Intelligence
+  - Machine Learning
+  - Computer Vision
+  - Full-Stack Development
+  - UI/UX Design
+  - Digital Transformation (DX)
+```
 
-- 🖐️ [Sign Language Recognition System](https://github.com/liliustwocout/Sign-Language-Recognition)  
-  聴覚障害者のコミュニケーション支援を目的とした、AIを活用したリアルタイム手話認識システム。  
-  **Tech:** TensorFlow.js, CNN, KNN, Transfer Learning, HTML/CSS/JS  
-
-- 🧩 [DevShare Lite](https://github.com/liliustwocout/DevShare-Lite)  
-  ITコミュニティの知識共有と交流を促進するFull-Stackプラットフォーム。  
-  **Tech:** Django, React, SQLite, Tailwind CSS, JWT  
+- 🔭 現在は **手話認識システム** と **DevShare Lite** を開発中  
+- 🚀 React・Next.js・Django を中心に学習中  
+- 🤖 AI を活用した Web システム開発に興味があります  
+- 🎨 ミニマルで近未来風の UI デザインが好きです  
 
 ---
 
-### 📈 GitHub Stats
+# ⚡ Tech Stack
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=liliustwocout&show_icons=true&theme=radical" alt="GitHub Stats" />
-  <br/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=liliustwocout&layout=compact&theme=radical" alt="Top Langs" />
-</p>
+<div align="center">
+
+### 💻 Languages
+<img src="https://skillicons.dev/icons?i=python,javascript,typescript,c,cpp,cs,java" />
+
+### 🌐 Frontend & Backend
+<img src="https://skillicons.dev/icons?i=react,nextjs,django,nodejs,html,css,tailwind" />
+
+### ⚙️ Tools & Platforms
+<img src="https://skillicons.dev/icons?i=git,docker,github,vscode,linux,unity" />
+
+</div>
 
 ---
 
-### 📫 連絡先 (Contact)
+# 🌌 Featured Projects
 
-- 📧 Email: datpltn205@gmail.com  
-- 🔗 LinkedIn: [linkedin.com/in/thanhdat](https://www.linkedin.com/in/th%C3%A0nh-%C4%91%E1%BA%A1t-0ba998369/)  
+<div align="center">
+
+<table>
+<tr>
+<td width="50%">
+
+## 🖐️ Sign Language Recognition
+
+AI-based real-time sign language recognition system for supporting communication.
+
+### ⚙️ Tech
+`TensorFlow.js` `CNN` `KNN` `Transfer Learning`
+
+🔗  
+https://github.com/liliustwocout/Sign-Language-Recognition
+
+</td>
+
+<td width="50%">
+
+## 🧩 DevShare Lite
+
+Community platform for developers to share knowledge and connect.
+
+### ⚙️ Tech
+`Django` `React` `JWT` `SQLite`
+
+🔗  
+https://github.com/liliustwocout/DevShare-Lite
+
+</td>
+</tr>
+</table>
+
+</div>
 
 ---
 
-<p align="center">
-  ご覧いただき、ありがとうございました！ <br/>
-  Thank you for visiting my profile 😊
-</p>
+# 📊 GitHub Analytics
+
+<div align="center">
+
+<img height="170em" src="https://github-readme-stats.vercel.app/api?username=liliustwocout&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F7FF&icon_color=00F7FF"/>
+
+<img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=liliustwocout&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F7FF"/>
+
+<br/><br/>
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=liliustwocout&theme=tokyonight&hide_border=true&background=0D1117&ring=00F7FF&fire=00F7FF&currStreakLabel=00F7FF"/>
+
+</div>
+
+---
+
+# 🏆 Achievements
+
+<div align="center">
+
+<img src="https://github-profile-trophy.vercel.app/?username=liliustwocout&theme=algolia&no-frame=true&row=1&column=6"/>
+
+</div>
+
+---
+
+# 🐍 Contribution Snake Animation
+
+<div align="center">
+
+![snake gif](https://github.com/liliustwocout/liliustwocout/blob/output/github-contribution-grid-snake-dark.svg)
+
+</div>
+
+---
+
+# 🌱 Currently Learning
+
+```txt
+🧠 Machine Learning & Computer Vision
+⚛️ Next.js + TypeScript
+☁️ Docker / CI-CD / DevOps
+🎨 Modern UI/UX Design
+🚀 AI Integration in Web Applications
+```
+
+---
+
+# 📫 Contact
+
+<div align="center">
+
+<a href="mailto:datpltn205@gmail.com">
+<img src="https://img.shields.io/badge/Gmail-111827?style=for-the-badge&logo=gmail&logoColor=00F7FF"/>
+</a>
+
+<a href="https://www.linkedin.com/in/th%C3%A0nh-%C4%91%E1%BA%A1t-0ba998369/">
+<img src="https://img.shields.io/badge/LinkedIn-111827?style=for-the-badge&logo=linkedin&logoColor=00F7FF"/>
+</a>
+
+<a href="https://github.com/liliustwocout">
+<img src="https://img.shields.io/badge/GitHub-111827?style=for-the-badge&logo=github&logoColor=00F7FF"/>
+</a>
+
+</div>
+
+---
+
+<div align="center">
+
+## 「コードで未来を作る。」
+
+<img src="https://capsule-render.vercel.app/api?type=waving&height=140&color=0:0f2027,50:203a43,100:2c5364&section=footer"/>
+
+</div>
