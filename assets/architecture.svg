@@ -2,39 +2,38 @@
   <defs>
     <!-- Background Gradient -->
     <linearGradient id="archBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#050811"/>
-      <stop offset="50%" stop-color="#091222"/>
+      <stop offset="0%" stop-color="#050812"/>
+      <stop offset="50%" stop-color="#091223"/>
       <stop offset="100%" stop-color="#04060C"/>
     </linearGradient>
 
     <!-- Border Gradient -->
     <linearGradient id="archBorder" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00F7FF" stop-opacity="0.7"/>
-      <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#6366F1" stop-opacity="0.6"/>
-    </linearGradient>
-
-    <!-- Pipeline Bus Glow -->
-    <linearGradient id="busGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00F7FF" stop-opacity="0.3"/>
-      <stop offset="50%" stop-color="#00F7FF" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.5"/>
+      <stop offset="0%" stop-color="#00F7FF" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#6366F1" stop-opacity="0.7"/>
     </linearGradient>
 
     <!-- Glow Filters -->
     <filter id="packetGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
     </filter>
 
     <filter id="boxGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="2" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
     </filter>
 
     <!-- Background Grid -->
     <pattern id="archGrid" width="20" height="20" patternUnits="userSpaceOnUse">
-      <circle cx="20" cy="20" r="0.7" fill="#00F7FF" fill-opacity="0.12"/>
+      <circle cx="20" cy="20" r="0.75" fill="#00F7FF" fill-opacity="0.14"/>
     </pattern>
   </defs>
 
@@ -43,99 +42,91 @@
       font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace;
     }
     .font-sans {
-      font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    }
-    @keyframes pulseNode {
-      0%, 100% { stroke-opacity: 0.9; }
-      50% { stroke-opacity: 0.35; }
-    }
-    .node-pulse {
-      animation: pulseNode 3s infinite ease-in-out;
+      font-family: 'Syne', 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     }
   </style>
 
   <!-- Container Base -->
   <rect x="2" y="2" width="916" height="316" rx="14" fill="url(#archBg)"/>
   <rect x="2" y="2" width="916" height="316" rx="14" fill="url(#archGrid)"/>
-  <rect x="2" y="2" width="916" height="316" rx="14" fill="none" stroke="url(#archBorder)" stroke-width="1.2"/>
+  
+  <!-- Outer Glow Border -->
+  <rect x="2" y="2" width="916" height="316" rx="14" fill="none" stroke="url(#archBorder)" stroke-width="1.3">
+    <animate attributeName="stroke-opacity" values="0.85;0.4;0.85" dur="3.5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Flowing Laser on Outer Border -->
+  <rect x="2" y="2" width="916" height="316" rx="14" fill="none" stroke="#00F7FF" stroke-width="2" stroke-dasharray="60 400" stroke-opacity="0.7">
+    <animate attributeName="stroke-dashoffset" values="0;-920" dur="4.5s" repeatCount="indefinite"/>
+  </rect>
 
   <!-- Top Status Bar -->
   <g transform="translate(24, 20)">
     <text class="font-mono" font-size="11" font-weight="bold" fill="#00F7FF" letter-spacing="1">
-      &gt; SYSTEM_ARCHITECTURE :: END-TO-END EDGE-TO-CLOUD DATAFLOW PIPELINE
+      &gt; SYSTEM_ARCHITECTURE :: END-TO-END PIPELINE &amp; BUS PROTOCOLS
     </text>
     <text x="870" y="0" text-anchor="end" class="font-mono" font-size="10" fill="#64748B">
-      PROTOCOL: RS-485 / MODBUS RTU / MQTT
+      PROTOCOL: RS-485 / MODBUS RTU / WEBSOCKETS / MQTT
     </text>
   </g>
 
-  <!-- Global Connecting Pipeline Tracks (Under Nodes) -->
-  <!-- Main Trunk from Sensors to AI Core -->
-  <path d="M 97 160 L 242 160 L 417 160 L 612 160" stroke="#00F7FF" stroke-width="2" stroke-opacity="0.3" stroke-dasharray="4,4"/>
-  <path d="M 97 160 L 242 160 L 417 160 L 612 160" stroke="#00F7FF" stroke-width="1.2" stroke-opacity="0.7"/>
+  <!-- ==================== ANIMATED FIBER OPTIC BUS CONDUITS ==================== -->
+  <!-- Base Guide Lines -->
+  <path d="M 97 160 L 242 160 L 417 160 L 612 160" stroke="#0B233D" stroke-width="6" stroke-linecap="round"/>
+  <path d="M 612 160 C 670 160, 680 105, 740 105 L 812 105" stroke="#0B233D" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 612 160 C 670 160, 680 215, 740 215 L 812 215" stroke="#0B233D" stroke-width="5" stroke-linecap="round"/>
 
-  <!-- Branch 1: AI to Dashboard -->
-  <path d="M 612 160 C 670 160, 680 105, 740 105 L 812 105" stroke="#00F7FF" stroke-width="1.5" stroke-opacity="0.6"/>
+  <!-- Active Fiber-Optic Pulsing Cable Lines (dashoffset flow) -->
+  <path d="M 97 160 L 242 160 L 417 160 L 612 160" stroke="#00F7FF" stroke-width="1.8" stroke-dasharray="8 6" stroke-opacity="0.8">
+    <animate attributeName="stroke-dashoffset" values="0;-28" dur="0.8s" repeatCount="indefinite"/>
+  </path>
+  <path d="M 612 160 C 670 160, 680 105, 740 105 L 812 105" stroke="#00F7FF" stroke-width="1.6" stroke-dasharray="8 6" stroke-opacity="0.8">
+    <animate attributeName="stroke-dashoffset" values="0;-28" dur="0.8s" repeatCount="indefinite"/>
+  </path>
+  <path d="M 612 160 C 670 160, 680 215, 740 215 L 812 215" stroke="#10B981" stroke-width="1.6" stroke-dasharray="8 6" stroke-opacity="0.8">
+    <animate attributeName="stroke-dashoffset" values="0;-28" dur="0.8s" repeatCount="indefinite"/>
+  </path>
 
-  <!-- Branch 2: AI to Cloud -->
-  <path d="M 612 160 C 670 160, 680 215, 740 215 L 812 215" stroke="#38BDF8" stroke-width="1.5" stroke-opacity="0.6"/>
-
-  <!-- Animated Data Packets Flowing Along Pipeline -->
-  <!-- Packet A: Sensors -> ESP32 -> RPi -> AI -> Dashboard (Cyan) -->
-  <circle r="4.5" fill="#00F7FF" filter="url(#packetGlow)">
-    <animateMotion dur="4.2s" repeatCount="indefinite"
+  <!-- ==================== ANIMATED HIGH-SPEED DATA PACKETS ==================== -->
+  <!-- Packet 1: Main Pipeline -> Dashboard (Cyan) -->
+  <circle r="4.8" fill="#00F7FF" filter="url(#packetGlow)">
+    <animateMotion dur="3.6s" repeatCount="indefinite"
       path="M 97 160 L 242 160 L 417 160 L 612 160 C 670 160, 680 105, 740 105 L 812 105"/>
   </circle>
 
-  <!-- Packet B: Sensors -> ESP32 -> RPi -> AI -> Cloud (Emerald/Teal) -->
-  <circle r="4" fill="#10B981" filter="url(#packetGlow)">
-    <animateMotion dur="4.2s" begin="2.1s" repeatCount="indefinite"
+  <!-- Packet 2: Main Pipeline -> Cloud (Emerald) -->
+  <circle r="4.2" fill="#10B981" filter="url(#packetGlow)">
+    <animateMotion dur="3.6s" begin="1.8s" repeatCount="indefinite"
       path="M 97 160 L 242 160 L 417 160 L 612 160 C 670 160, 680 215, 740 215 L 812 215"/>
   </circle>
 
-  <!-- Packet C: Continuous High-speed RS-485 Bursts -->
-  <circle r="3" fill="#F8FAFC" filter="url(#packetGlow)">
-    <animateMotion dur="4.2s" begin="1.0s" repeatCount="indefinite"
+  <!-- Packet 3: High-speed Burst Packet (White) -->
+  <circle r="3" fill="#FFFFFF" filter="url(#packetGlow)">
+    <animateMotion dur="3.6s" begin="0.9s" repeatCount="indefinite"
       path="M 97 160 L 242 160 L 417 160 L 612 160 C 670 160, 680 105, 740 105 L 812 105"/>
   </circle>
 
-  <!-- Pipeline Protocol Badges Above Connecting Lines -->
-  <!-- Protocol 1: ADC Sampling -->
+  <!-- Protocol Badges -->
   <g transform="translate(145, 140)">
     <rect x="-8" y="-12" width="46" height="15" rx="3" fill="#040914" stroke="#1E293B" stroke-width="0.8"/>
     <text x="15" y="-2" text-anchor="middle" class="font-mono" font-size="8" fill="#38BDF8">10 Hz ADC</text>
   </g>
 
-  <!-- Protocol 2: RS-485 -->
   <g transform="translate(290, 140)">
-    <rect x="-8" y="-12" width="58" height="15" rx="3" fill="#031521" stroke="#00F7FF" stroke-opacity="0.4" stroke-width="0.8"/>
+    <rect x="-8" y="-12" width="58" height="15" rx="3" fill="#031521" stroke="#00F7FF" stroke-opacity="0.5" stroke-width="0.8"/>
     <text x="21" y="-2" text-anchor="middle" class="font-mono" font-size="8" font-weight="bold" fill="#00F7FF">RS-485</text>
   </g>
 
-  <!-- Protocol 3: Feature Stream -->
   <g transform="translate(475, 140)">
     <rect x="-8" y="-12" width="50" height="15" rx="3" fill="#040914" stroke="#1E293B" stroke-width="0.8"/>
     <text x="17" y="-2" text-anchor="middle" class="font-mono" font-size="8" fill="#38BDF8">Features</text>
   </g>
 
-  <!-- Protocol 4: WebSockets -->
-  <g transform="translate(680, 85)">
-    <text class="font-mono" font-size="8" fill="#00F7FF">WebSocket</text>
-  </g>
-
-  <!-- Protocol 5: MQTT -->
-  <g transform="translate(680, 230)">
-    <text class="font-mono" font-size="8" fill="#10B981">MQTT / REST</text>
-  </g>
-
-
-  <!-- ==================== NODE 1: SENSORS (Perception Layer) ==================== -->
+  <!-- ==================== NODE 1: SENSORS ==================== -->
   <g transform="translate(38, 105)">
     <rect width="118" height="110" rx="8" fill="#08101E" stroke="#1E293B" stroke-width="1"/>
-    <!-- Header -->
     <path d="M 0 8 Q 0 0 8 0 L 110 0 Q 118 0 118 8 L 118 24 L 0 24 Z" fill="#0D1A2D"/>
     <text x="59" y="16" text-anchor="middle" class="font-mono" font-size="9" font-weight="bold" fill="#00F7FF">01. SENSORS</text>
-    <!-- Content -->
     <g transform="translate(10, 38)">
       <circle cx="4" cy="4" r="2.5" fill="#38BDF8"/>
       <text x="12" y="7" class="font-mono" font-size="9" fill="#E2E8F0">ZE03-H2S</text>
@@ -150,15 +141,13 @@
     </g>
   </g>
 
-  <!-- ==================== NODE 2: ESP32 NODE (Acquisition) ==================== -->
+  <!-- ==================== NODE 2: ESP32 NODE ==================== -->
   <g transform="translate(185, 105)">
     <rect width="118" height="110" rx="8" fill="#08101E" stroke="#00F7FF" stroke-width="1.2" stroke-opacity="0.6">
       <animate attributeName="stroke-opacity" values="0.7;0.3;0.7" dur="2.5s" repeatCount="indefinite"/>
     </rect>
-    <!-- Header -->
     <path d="M 0 8 Q 0 0 8 0 L 110 0 Q 118 0 118 8 L 118 24 L 0 24 Z" fill="#0A1E30"/>
     <text x="59" y="16" text-anchor="middle" class="font-mono" font-size="9" font-weight="bold" fill="#00F7FF">02. ESP32 NODE</text>
-    <!-- Content -->
     <g transform="translate(10, 38)">
       <text x="2" y="7" class="font-mono" font-size="9" font-weight="600" fill="#F8FAFC">ADC Sampling</text>
       <text x="2" y="22" class="font-mono" font-size="8.5" fill="#94A3B8">12-bit / 10 Hz</text>
@@ -173,14 +162,12 @@
     <rect width="135" height="130" rx="8" fill="#07111D" stroke="#38BDF8" stroke-width="1.2" stroke-opacity="0.6">
       <animate attributeName="stroke-opacity" values="0.8;0.35;0.8" dur="3s" repeatCount="indefinite"/>
     </rect>
-    <!-- Header -->
     <path d="M 0 8 Q 0 0 8 0 L 127 0 Q 135 0 135 8 L 135 24 L 0 24 Z" fill="#0A2238"/>
     <text x="67" y="16" text-anchor="middle" class="font-mono" font-size="9" font-weight="bold" fill="#38BDF8">03. RPi GATEWAY</text>
-    <!-- Content -->
     <g transform="translate(10, 38)">
-      <text x="2" y="7" class="font-mono" font-size="9" font-weight="600" fill="#F8FAFC">Signal Preprocessing</text>
+      <text x="2" y="7" class="font-mono" font-size="9" font-weight="600" fill="#F8FAFC">Preprocessing</text>
       <text x="2" y="22" class="font-mono" font-size="8.5" fill="#94A3B8">• EMA Filter</text>
-      <text x="2" y="36" class="font-mono" font-size="8.5" fill="#94A3B8">• Despike Algorithm</text>
+      <text x="2" y="36" class="font-mono" font-size="8.5" fill="#94A3B8">• Despike Logic</text>
       <text x="2" y="50" class="font-mono" font-size="8.5" fill="#94A3B8">• Savitzky-Golay</text>
       <text x="2" y="65" class="font-mono" font-size="8.5" fill="#94A3B8">• T/H Compensation</text>
       <text x="2" y="80" class="font-mono" font-size="8" font-weight="bold" fill="#10B981">Feature Extraction</text>
@@ -192,10 +179,8 @@
     <rect width="155" height="130" rx="8" fill="#0A1526" stroke="#00F7FF" stroke-width="1.6" filter="url(#boxGlow)">
       <animate attributeName="stroke-opacity" values="1;0.45;1" dur="2.8s" repeatCount="indefinite"/>
     </rect>
-    <!-- Header -->
     <path d="M 0 8 Q 0 0 8 0 L 147 0 Q 155 0 155 8 L 155 24 L 0 24 Z" fill="#03253A"/>
     <text x="77" y="16" text-anchor="middle" class="font-mono" font-size="9.5" font-weight="bold" fill="#00F7FF">04. EDGE AI ENGINE</text>
-    <!-- Content -->
     <g transform="translate(10, 38)">
       <rect x="0" y="0" width="135" height="34" rx="4" fill="#051B2C" stroke="#0C344E" stroke-width="0.8"/>
       <text x="8" y="14" class="font-mono" font-size="8.5" font-weight="bold" fill="#00F7FF">Classification (RF)</text>
@@ -205,7 +190,7 @@
       <text x="8" y="54" class="font-mono" font-size="8.5" font-weight="bold" fill="#38BDF8">Regression (RF)</text>
       <text x="8" y="66" class="font-mono" font-size="8" fill="#38BDF8">H₂S R² = 0.8534</text>
 
-      <text x="2" y="86" class="font-mono" font-size="8" fill="#94A3B8">MAE: 3.93 ppm · Live RT</text>
+      <text x="2" y="86" class="font-mono" font-size="8" fill="#94A3B8">MAE: 3.93 ppm · Real-Time</text>
     </g>
   </g>
 
@@ -217,7 +202,7 @@
     <g transform="translate(10, 30)">
       <text x="0" y="8" class="font-mono" font-size="8.5" fill="#E2E8F0">WaveCycle Monitor</text>
       <text x="0" y="22" class="font-mono" font-size="8.5" fill="#E2E8F0">Gas Pulse Alerts</text>
-      <text x="0" y="36" class="font-mono" font-size="8" fill="#10B981">● Zero-Latency Local UI</text>
+      <text x="0" y="36" class="font-mono" font-size="8.5" fill="#10B981">● Zero-Latency Local UI</text>
     </g>
   </g>
 
@@ -229,20 +214,20 @@
     <g transform="translate(10, 30)">
       <text x="0" y="8" class="font-mono" font-size="8.5" fill="#E2E8F0">Firebase / WISE-IoT</text>
       <text x="0" y="22" class="font-mono" font-size="8.5" fill="#E2E8F0">Historical Telemetry</text>
-      <text x="0" y="36" class="font-mono" font-size="8" fill="#38BDF8">● Model Drift Tracking</text>
+      <text x="0" y="36" class="font-mono" font-size="8.5" fill="#38BDF8">● Model Drift Tracking</text>
     </g>
   </g>
 
   <!-- Bottom Legend / Info -->
   <g transform="translate(38, 290)">
     <circle cx="6" cy="6" r="3.5" fill="#00F7FF"/>
-    <text x="16" y="9" class="font-mono" font-size="9" fill="#94A3B8">Live In-Transit Telemetry Pulse</text>
+    <text x="16" y="9" class="font-mono" font-size="9" fill="#94A3B8">In-Transit Telemetry Pulse</text>
 
     <circle cx="210" cy="6" r="3.5" fill="#10B981"/>
-    <text x="220" y="9" class="font-mono" font-size="9" fill="#94A3B8">Inference &amp; Alert Stream</text>
+    <text x="220" y="9" class="font-mono" font-size="9" fill="#94A3B8">Inference Alert Stream</text>
 
     <text x="840" y="9" text-anchor="end" class="font-mono" font-size="9" fill="#64748B">
-      END-TO-END LATENCY: &lt; 120ms
+      END-TO-END PIPELINE LATENCY: &lt; 120ms
     </text>
   </g>
 </svg>

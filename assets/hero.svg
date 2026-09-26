@@ -1,206 +1,305 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 340" width="100%" height="auto" fill="none">
   <defs>
-    <!-- Background Linear Gradients -->
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#060911"/>
-      <stop offset="50%" stop-color="#09101E"/>
-      <stop offset="100%" stop-color="#04060B"/>
+    <!-- Background Gradient -->
+    <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05070E"/>
+      <stop offset="40%" stop-color="#080E1B"/>
+      <stop offset="100%" stop-color="#030509"/>
     </linearGradient>
 
-    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00F7FF" stop-opacity="0.8"/>
-      <stop offset="40%" stop-color="#0284C7" stop-opacity="0.3"/>
-      <stop offset="80%" stop-color="#6366F1" stop-opacity="0.4"/>
-      <stop offset="100%" stop-color="#00F7FF" stop-opacity="0.6"/>
-    </linearGradient>
-
-    <linearGradient id="cyanText" x1="0%" y1="0%" x2="100%" y2="0%">
+    <!-- Animated Holographic Gradient for Name -->
+    <linearGradient id="holoName" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#FFFFFF"/>
-      <stop offset="50%" stop-color="#C2F5FF"/>
-      <stop offset="100%" stop-color="#00F7FF"/>
+      <stop offset="25%" stop-color="#A5F3FC"/>
+      <stop offset="50%" stop-color="#00F7FF"/>
+      <stop offset="75%" stop-color="#818CF8"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
+      <animate attributeName="x1" values="0%;100%;0%" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="100%;200%;100%" dur="6s" repeatCount="indefinite"/>
     </linearGradient>
 
-    <linearGradient id="scannerGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+    <!-- Border Glow Gradient -->
+    <linearGradient id="cyberBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F7FF" stop-opacity="0.9"/>
+      <stop offset="35%" stop-color="#0284C7" stop-opacity="0.2"/>
+      <stop offset="70%" stop-color="#8B5CF6" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#00F7FF" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <!-- Scanning Laser Gradient -->
+    <linearGradient id="laserBeam" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#00F7FF" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#00F7FF" stop-opacity="0.12"/>
+      <stop offset="50%" stop-color="#00F7FF" stop-opacity="0.18"/>
       <stop offset="100%" stop-color="#00F7FF" stop-opacity="0"/>
     </linearGradient>
 
-    <linearGradient id="badgeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00F7FF" stop-opacity="0.15"/>
-      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.05"/>
-    </linearGradient>
-
     <!-- Grid Pattern -->
-    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
-      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#00F7FF" stroke-width="0.5" stroke-opacity="0.07"/>
-      <circle cx="24" cy="24" r="0.8" fill="#00F7FF" fill-opacity="0.2"/>
+    <pattern id="heroGrid" width="22" height="22" patternUnits="userSpaceOnUse">
+      <path d="M 22 0 L 0 0 0 22" fill="none" stroke="#00F7FF" stroke-width="0.5" stroke-opacity="0.08"/>
+      <circle cx="22" cy="22" r="0.7" fill="#00F7FF" fill-opacity="0.2"/>
     </pattern>
 
-    <!-- Glowing Filters -->
-    <filter id="cyanGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    <!-- Glow Filters -->
+    <filter id="intenseGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
     </filter>
 
-    <filter id="softGlow" x="-10%" y="-10%" width="120%" height="120%">
-      <feGaussianBlur stdDeviation="1.5" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    <filter id="textGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
     </filter>
   </defs>
 
   <style>
+    .font-display {
+      font-family: 'Syne', 'Unbounded', 'Space Grotesk', 'Rajdhani', 'Montserrat', 'Segoe UI', sans-serif;
+    }
     .font-mono {
       font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, Menlo, monospace;
-    }
-    .font-sans {
-      font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     }
     @keyframes blink {
       0%, 100% { opacity: 1; }
       50% { opacity: 0; }
     }
-    @keyframes pulseLed {
-      0%, 100% { opacity: 0.9; transform: scale(1); }
-      50% { opacity: 0.4; transform: scale(0.92); }
-    }
-    @keyframes scanline {
-      0% { transform: translateY(-40px); }
-      100% { transform: translateY(360px); }
+    @keyframes radarSpin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
     }
     .cursor-blink {
-      animation: blink 0.9s infinite;
+      animation: blink 0.85s infinite;
     }
-    .pulse-status {
-      animation: pulseLed 2s infinite ease-in-out;
-      transform-origin: center;
-    }
-    .scan-bar {
-      animation: scanline 7s linear infinite;
+    .radar-rotator {
+      transform-origin: 865px 75px;
+      animation: radarSpin 9s linear infinite;
     }
   </style>
 
   <!-- Card Background -->
-  <rect x="2" y="2" width="916" height="336" rx="14" fill="url(#bgGrad)"/>
-  <rect x="2" y="2" width="916" height="336" rx="14" fill="url(#grid)"/>
+  <rect x="2" y="2" width="916" height="336" rx="14" fill="url(#heroBg)"/>
+  <rect x="2" y="2" width="916" height="336" rx="14" fill="url(#heroGrid)"/>
 
-  <!-- Scanning Sweep Line (SMIL + CSS fallback) -->
-  <g opacity="0.8">
-    <rect class="scan-bar" x="2" y="0" width="916" height="40" fill="url(#scannerGrad)" pointer-events="none">
-      <animate attributeName="y" values="-40;340" dur="6.5s" repeatCount="indefinite"/>
+  <!-- Scanning Sweep Laser (Continuous) -->
+  <g opacity="0.9">
+    <rect x="2" y="0" width="916" height="36" fill="url(#laserBeam)" pointer-events="none">
+      <animate attributeName="y" values="-36;340" dur="5s" repeatCount="indefinite"/>
     </rect>
   </g>
 
-  <!-- Border Frame -->
-  <rect x="2" y="2" width="916" height="336" rx="14" fill="none" stroke="url(#borderGrad)" stroke-width="1.5"/>
+  <!-- Animated Active Outer Border Frame -->
+  <rect x="2" y="2" width="916" height="336" rx="14" fill="none" stroke="url(#cyberBorder)" stroke-width="1.4">
+    <animate attributeName="stroke-opacity" values="0.9;0.4;0.9" dur="3s" repeatCount="indefinite"/>
+  </rect>
 
-  <!-- Terminal Top Bar -->
-  <path d="M 2 16 Q 2 2 16 2 L 904 2 Q 918 2 918 16 L 918 42 L 2 42 Z" fill="#0A1220" fill-opacity="0.9"/>
-  <line x1="2" y1="42" x2="918" y2="42" stroke="#1E293B" stroke-width="1"/>
+  <!-- Flowing Border Laser Dash Pulse -->
+  <rect x="2" y="2" width="916" height="336" rx="14" fill="none" stroke="#00F7FF" stroke-width="1.8" stroke-dasharray="60 400" stroke-opacity="0.8">
+    <animate attributeName="stroke-dashoffset" values="0;-920" dur="4s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Top Terminal Header Bar -->
+  <path d="M 2 14 Q 2 2 14 2 L 906 2 Q 918 2 918 14 L 918 38 L 2 38 Z" fill="#0A1220" fill-opacity="0.95"/>
+  <line x1="2" y1="38" x2="918" y2="38" stroke="#16263D" stroke-width="1"/>
 
   <!-- Window Control Dots -->
-  <circle cx="24" cy="22" r="5.5" fill="#EF4444" fill-opacity="0.85"/>
-  <circle cx="42" cy="22" r="5.5" fill="#F59E0B" fill-opacity="0.85"/>
-  <circle cx="60" cy="22" r="5.5" fill="#10B981" fill-opacity="0.85"/>
+  <circle cx="22" cy="20" r="5" fill="#EF4444" fill-opacity="0.9"/>
+  <circle cx="38" cy="20" r="5" fill="#F59E0B" fill-opacity="0.9"/>
+  <circle cx="54" cy="20" r="5" fill="#10B981" fill-opacity="0.9"/>
 
-  <!-- Window Title -->
-  <text x="84" y="26" class="font-mono" font-size="11.5" fill="#64748B" letter-spacing="0.5">liliustwocout@workstation: ~/neural-core/profile-v4.2</text>
+  <!-- Window Breadcrumb -->
+  <text x="74" y="24" class="font-mono" font-size="11" fill="#64748B">
+    DAT@PHENIKAA-AI-CORE: <tspan fill="#38BDF8">~/system-architect</tspan> <tspan fill="#00F7FF">[ACTIVE_SESSION]</tspan>
+  </text>
 
-  <!-- System Status Badge (Top Right) -->
-  <g transform="translate(685, 12)">
-    <rect width="215" height="20" rx="4" fill="#031623" stroke="#00F7FF" stroke-opacity="0.3" stroke-width="0.8"/>
-    <circle class="pulse-status" cx="12" cy="10" r="3.5" fill="#00F7FF" filter="url(#cyanGlow)">
-      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+  <!-- Top Right Status Indicator -->
+  <g transform="translate(735, 11)">
+    <rect width="168" height="18" rx="3" fill="#021B27" stroke="#00F7FF" stroke-width="0.8" stroke-opacity="0.4"/>
+    <circle cx="10" cy="9" r="3" fill="#00F7FF" filter="url(#textGlow)">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="1.8s" repeatCount="indefinite"/>
     </circle>
-    <text x="22" y="14" class="font-mono" font-size="9.5" fill="#00F7FF" font-weight="600" letter-spacing="0.8">CORE::NODE_ONLINE</text>
-    <text x="145" y="14" class="font-mono" font-size="9" fill="#38BDF8" letter-spacing="0.5">EST. 2026</text>
+    <text x="20" y="13" class="font-mono" font-size="9" font-weight="bold" fill="#00F7FF">SYS::QUANTUM_READY</text>
   </g>
 
-  <!-- Cyber Reticle Accents -->
-  <path d="M 18 56 L 18 68 M 18 56 L 30 56" stroke="#00F7FF" stroke-width="1.8" stroke-linecap="round" opacity="0.7"/>
-  <path d="M 902 56 L 902 68 M 902 56 L 890 56" stroke="#00F7FF" stroke-width="1.8" stroke-linecap="round" opacity="0.7"/>
-  <path d="M 18 322 L 18 310 M 18 322 L 30 322" stroke="#00F7FF" stroke-width="1.8" stroke-linecap="round" opacity="0.7"/>
-  <path d="M 902 322 L 902 310 M 902 322 L 890 322" stroke="#00F7FF" stroke-width="1.8" stroke-linecap="round" opacity="0.7"/>
+  <!-- Corner Reticle Accents -->
+  <path d="M 16 50 L 16 64 M 16 50 L 30 50" stroke="#00F7FF" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 904 50 L 904 64 M 904 50 L 890 50" stroke="#00F7FF" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 16 326 L 16 312 M 16 326 L 30 326" stroke="#00F7FF" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 904 326 L 904 312 M 904 326 L 890 326" stroke="#00F7FF" stroke-width="2" stroke-linecap="round"/>
 
-  <!-- Identity Section -->
-  <g transform="translate(36, 68)">
-    <!-- Subtitle Tag -->
-    <rect x="0" y="0" width="168" height="22" rx="4" fill="url(#badgeGrad)" stroke="#00F7FF" stroke-width="0.8" stroke-opacity="0.4"/>
-    <text x="10" y="15" class="font-mono" font-size="10" fill="#00F7FF" font-weight="600" letter-spacing="1">SYSTEM INITIALIZED</text>
-
-    <!-- Main Name -->
-    <text x="0" y="58" class="font-sans" font-size="34" font-weight="800" fill="url(#cyanText)" letter-spacing="1.5" filter="url(#softGlow)">
-      LÊ PHẠM THÀNH ĐẠT
-    </text>
-
-    <!-- Roles & Domains -->
-    <text x="1" y="84" class="font-mono" font-size="13" font-weight="600" fill="#38BDF8" letter-spacing="1.8">
-      SYSTEM ENGINEERING  <tspan fill="#64748B">|</tspan>  AI ENGINEERING  <tspan fill="#64748B">|</tspan>  EDGE AI  <tspan fill="#64748B">|</tspan>  FULL-STACK
-    </text>
-
-    <!-- Divider Line -->
-    <line x1="0" y1="98" x2="848" y2="98" stroke="#1E293B" stroke-width="1"/>
-    <line x1="0" y1="98" x2="160" y2="98" stroke="#00F7FF" stroke-width="1.5" stroke-opacity="0.8"/>
+  <!-- ==================== ROTATING RADAR / HUD ELEMENT (TOP-RIGHT) ==================== -->
+  <g class="radar-rotator" opacity="0.65">
+    <circle cx="865" cy="75" r="28" fill="none" stroke="#00F7FF" stroke-width="0.8" stroke-dasharray="6,4"/>
+    <circle cx="865" cy="75" r="18" fill="none" stroke="#38BDF8" stroke-width="0.6"/>
+    <circle cx="865" cy="75" r="7" fill="#00F7FF" fill-opacity="0.2"/>
+    <line x1="865" y1="45" x2="865" y2="105" stroke="#00F7FF" stroke-width="0.8" stroke-opacity="0.5"/>
+    <line x1="835" y1="75" x2="895" y2="75" stroke="#00F7FF" stroke-width="0.8" stroke-opacity="0.5"/>
+  </g>
+  <!-- Non-rotating Radar Crosshairs & Blip -->
+  <g opacity="0.85">
+    <circle cx="865" cy="75" r="2" fill="#00F7FF"/>
+    <circle cx="875" cy="67" r="2.5" fill="#10B981" filter="url(#textGlow)">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="2s" repeatCount="indefinite"/>
+    </circle>
   </g>
 
-  <!-- Interactive Terminal Boot Sequence -->
-  <g transform="translate(36, 185)">
-    <!-- Terminal Background Box -->
-    <rect x="0" y="0" width="848" height="96" rx="8" fill="#040812" fill-opacity="0.75" stroke="#13233A" stroke-width="1"/>
+  <!-- ==================== STYLIZED NAME & IDENTITY BLOCK ==================== -->
+  <g transform="translate(36, 52)">
+    <!-- Tech Identifier Tag -->
+    <g transform="translate(0, 0)">
+      <rect width="180" height="18" rx="3" fill="#041F2D" stroke="#00F7FF" stroke-width="0.8" stroke-opacity="0.5"/>
+      <text x="8" y="12" class="font-mono" font-size="9" font-weight="bold" fill="#00F7FF" letter-spacing="1.2">
+        // NEURAL IDENTITY [01]
+      </text>
+    </g>
+
+    <!-- Stylized Futuristic Main Name -->
+    <g transform="translate(0, 48)">
+      <!-- Cyber Frame Target Bracket Left -->
+      <path d="M 0 -22 L -8 -22 L -8 10 L 0 10" stroke="#00F7FF" stroke-width="2" fill="none" opacity="0.8"/>
+
+      <!-- Glowing Shadow Duplicate -->
+      <text x="6" y="2" class="font-display" font-size="34" font-weight="900" fill="#00F7FF" letter-spacing="4.5" opacity="0.4" filter="url(#intenseGlow)">
+        LÊ PHẠM THÀNH ĐẠT
+      </text>
+
+      <!-- Main Gradient Stylized Name -->
+      <text x="6" y="2" class="font-display" font-size="34" font-weight="900" fill="url(#holoName)" letter-spacing="4.5">
+        LÊ PHẠM THÀNH ĐẠT
+      </text>
+
+      <!-- Cyber Frame Target Bracket Right -->
+      <path d="M 520 -22 L 528 -22 L 528 10 L 520 10" stroke="#00F7FF" stroke-width="2" fill="none" opacity="0.8"/>
+    </g>
+
+    <!-- Stylized Role Beam & Animated Laser Dot -->
+    <g transform="translate(4, 66)">
+      <text class="font-mono" font-size="12.5" font-weight="700" fill="#38BDF8" letter-spacing="2">
+        AI &amp; SYSTEM ARCHITECT  <tspan fill="#64748B">|</tspan>  EDGE INTELLIGENCE  <tspan fill="#64748B">|</tspan>  SWARM LAB
+      </text>
+      <!-- Horizontal HUD Divider Beam -->
+      <line x1="0" y1="12" x2="790" y2="12" stroke="#16273F" stroke-width="1.2"/>
+      <line x1="0" y1="12" x2="220" y2="12" stroke="#00F7FF" stroke-width="1.5"/>
+      <!-- Traveling Laser Dot on Divider Beam -->
+      <circle r="2.5" fill="#00F7FF" filter="url(#textGlow)">
+        <animateMotion path="M 0 12 L 790 12 L 0 12" dur="5s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+
+  <!-- ==================== ANIMATED NEURAL FREQUENCY EQUALIZER ==================== -->
+  <g transform="translate(620, 96)" opacity="0.85">
+    <rect x="-10" y="-8" width="130" height="34" rx="4" fill="#040D1A" stroke="#16273F" stroke-width="0.8"/>
+    <text x="55" y="-12" text-anchor="middle" class="font-mono" font-size="7.5" fill="#00F7FF">NEURAL FREQ [LIVE]</text>
+    
+    <!-- Bar 1 -->
+    <rect x="0" y="20" width="6" height="4" rx="2" fill="#00F7FF">
+      <animate attributeName="height" values="4;18;8;22;4" dur="1.2s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="20;6;16;2;20" dur="1.2s" repeatCount="indefinite"/>
+    </rect>
+    <!-- Bar 2 -->
+    <rect x="12" y="20" width="6" height="4" rx="2" fill="#38BDF8">
+      <animate attributeName="height" values="8;24;6;14;8" dur="1.0s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="16;0;18;10;16" dur="1.0s" repeatCount="indefinite"/>
+    </rect>
+    <!-- Bar 3 -->
+    <rect x="24" y="20" width="6" height="4" rx="2" fill="#818CF8">
+      <animate attributeName="height" values="14;6;22;10;14" dur="1.4s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="10;18;2;14;10" dur="1.4s" repeatCount="indefinite"/>
+    </rect>
+    <!-- Bar 4 -->
+    <rect x="36" y="20" width="6" height="4" rx="2" fill="#A855F7">
+      <animate attributeName="height" values="6;20;12;24;6" dur="0.9s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="18;4;12;0;18" dur="0.9s" repeatCount="indefinite"/>
+    </rect>
+    <!-- Bar 5 -->
+    <rect x="48" y="20" width="6" height="4" rx="2" fill="#00F7FF">
+      <animate attributeName="height" values="18;10;24;6;18" dur="1.1s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="6;14;0;18;6" dur="1.1s" repeatCount="indefinite"/>
+    </rect>
+    <!-- Bar 6 -->
+    <rect x="60" y="20" width="6" height="4" rx="2" fill="#38BDF8">
+      <animate attributeName="height" values="10;22;8;16;10" dur="1.3s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="14;2;16;8;14" dur="1.3s" repeatCount="indefinite"/>
+    </rect>
+    <!-- Bar 7 -->
+    <rect x="72" y="20" width="6" height="4" rx="2" fill="#10B981">
+      <animate attributeName="height" values="6;16;20;8;6" dur="0.8s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="18;8;4;16;18" dur="0.8s" repeatCount="indefinite"/>
+    </rect>
+    <!-- Bar 8 -->
+    <rect x="84" y="20" width="6" height="4" rx="2" fill="#00F7FF">
+      <animate attributeName="height" values="14;4;18;24;14" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="10;20;6;0;10" dur="1.5s" repeatCount="indefinite"/>
+    </rect>
+    <!-- Bar 9 -->
+    <rect x="96" y="20" width="6" height="4" rx="2" fill="#38BDF8">
+      <animate attributeName="height" values="8;20;4;16;8" dur="1.0s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="16;4;20;8;16" dur="1.0s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- ==================== INTERACTIVE TERMINAL HUD ==================== -->
+  <g transform="translate(36, 178)">
+    <rect width="848" height="98" rx="8" fill="#040812" fill-opacity="0.8" stroke="#13233A" stroke-width="1"/>
 
     <!-- Terminal Line 1 -->
-    <g transform="translate(16, 24)">
-      <text class="font-mono" font-size="11.5" fill="#10B981" font-weight="600">[00:00:01]</text>
-      <text x="80" y="0" class="font-mono" font-size="11.5" fill="#64748B">BOOT &gt;&gt;</text>
-      <text x="140" y="0" class="font-mono" font-size="11.5" fill="#E2E8F0">Initializing AI Environment &amp; Hardware Abstraction Layer...</text>
-      <text x="680" y="0" class="font-mono" font-size="11" fill="#10B981" font-weight="bold">[ OK ]</text>
+    <g transform="translate(18, 24)">
+      <text class="font-mono" font-size="11.5" fill="#10B981" font-weight="bold">[00:00:01]</text>
+      <text x="80" y="0" class="font-mono" font-size="11.5" fill="#64748B">CORE &gt;&gt;</text>
+      <text x="140" y="0" class="font-mono" font-size="11.5" fill="#F1F5F9">Phenikaa University System Engineering Core Active</text>
+      <text x="700" y="0" class="font-mono" font-size="11" fill="#10B981" font-weight="bold">[ ONLINE ]</text>
     </g>
 
     <!-- Terminal Line 2 -->
-    <g transform="translate(16, 46)">
-      <text class="font-mono" font-size="11.5" fill="#10B981" font-weight="600">[00:00:02]</text>
+    <g transform="translate(18, 46)">
+      <text class="font-mono" font-size="11.5" fill="#10B981" font-weight="bold">[00:00:02]</text>
       <text x="80" y="0" class="font-mono" font-size="11.5" fill="#00F7FF">EDGE &gt;&gt;</text>
-      <text x="140" y="0" class="font-mono" font-size="11.5" fill="#94A3B8">Online: ZE03-H2S, MQ136 Gas Sensor Node, ESP32 ADC &amp; RS-485</text>
-      <text x="680" y="0" class="font-mono" font-size="11" fill="#00F7FF" font-weight="bold">[ 94.18% ]</text>
+      <text x="140" y="0" class="font-mono" font-size="11.5" fill="#94A3B8">Electronic Nose Dual-Mode Random Forest (H₂S Gas Detection)</text>
+      <text x="700" y="0" class="font-mono" font-size="11" fill="#00F7FF" font-weight="bold">[ 94.18% ]</text>
     </g>
 
     <!-- Terminal Line 3 -->
-    <g transform="translate(16, 68)">
-      <text class="font-mono" font-size="11.5" fill="#10B981" font-weight="600">[00:00:03]</text>
-      <text x="80" y="0" class="font-mono" font-size="11.5" fill="#A855F7">MAS  &gt;&gt;</text>
-      <text x="140" y="0" class="font-mono" font-size="11.5" fill="#94A3B8">Loaded: Information Diffusion Engine, BDI Personas &amp; Ollama Swarm</text>
-      <text x="680" y="0" class="font-mono" font-size="11" fill="#A855F7" font-weight="bold">[ READY ]</text>
+    <g transform="translate(18, 68)">
+      <text class="font-mono" font-size="11.5" fill="#10B981" font-weight="bold">[00:00:03]</text>
+      <text x="80" y="0" class="font-mono" font-size="11.5" fill="#A855F7">SWARM&gt;&gt;</text>
+      <text x="140" y="0" class="font-mono" font-size="11.5" fill="#94A3B8">MAS-Diffusion-Lab: LLM Multi-Agent Network Simulation</text>
+      <text x="700" y="0" class="font-mono" font-size="11" fill="#A855F7" font-weight="bold">[ 2100+ T/S ]</text>
     </g>
 
     <!-- Terminal Prompt / Cursor -->
-    <g transform="translate(16, 88)">
-      <text class="font-mono" font-size="11.5" fill="#00F7FF" font-weight="600">user@liliustwocout:~$</text>
-      <text x="165" y="0" class="font-mono" font-size="11.5" fill="#F8FAFC">ready to engineer intelligent physical systems</text>
-      <rect class="cursor-blink" x="480" y="-10" width="8" height="12" fill="#00F7FF">
-        <animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite"/>
+    <g transform="translate(18, 90)">
+      <text class="font-mono" font-size="11.5" fill="#00F7FF" font-weight="bold">engineer@liliustwocout:~$</text>
+      <text x="195" y="0" class="font-mono" font-size="11.5" fill="#E2E8F0">building high-precision edge-to-cloud AI pipelines</text>
+      <rect class="cursor-blink" x="535" y="-10" width="8" height="12" fill="#00F7FF">
+        <animate attributeName="opacity" values="1;0;1" dur="0.85s" repeatCount="indefinite"/>
       </rect>
     </g>
   </g>
 
-  <!-- Bottom Telemetry Badges -->
-  <g transform="translate(36, 298)">
-    <!-- Badge 1: Phenikaa University -->
-    <rect x="0" y="0" width="185" height="24" rx="4" fill="#08101E" stroke="#1E293B" stroke-width="0.8"/>
-    <circle cx="12" cy="12" r="3" fill="#38BDF8"/>
-    <text x="24" y="16" class="font-mono" font-size="10" fill="#94A3B8">Phenikaa University</text>
+  <!-- ==================== BOTTOM TELEMETRY FOOTER ==================== -->
+  <g transform="translate(36, 296)">
+    <!-- Pill 1 -->
+    <rect x="0" y="0" width="165" height="24" rx="4" fill="#08101E" stroke="#16273F" stroke-width="0.8"/>
+    <circle cx="12" cy="12" r="3" fill="#00F7FF"/>
+    <text x="24" y="16" class="font-mono" font-size="10" fill="#94A3B8">Vietnam · Phenikaa</text>
 
-    <!-- Badge 2: Vietnam -->
-    <rect x="195" y="0" width="105" height="24" rx="4" fill="#08101E" stroke="#1E293B" stroke-width="0.8"/>
-    <circle cx="207" cy="12" r="3" fill="#10B981"/>
-    <text x="219" y="16" class="font-mono" font-size="10" fill="#94A3B8">Vietnam</text>
+    <!-- Pill 2 -->
+    <rect x="175" y="0" width="180" height="24" rx="4" fill="#08101E" stroke="#16273F" stroke-width="0.8"/>
+    <circle cx="187" cy="12" r="3" fill="#10B981"/>
+    <text x="199" y="16" class="font-mono" font-size="10" fill="#94A3B8">Edge AI + Multi-Agent</text>
 
-    <!-- Badge 3: Focus -->
-    <rect x="310" y="0" width="220" height="24" rx="4" fill="#08101E" stroke="#1E293B" stroke-width="0.8"/>
-    <circle cx="322" cy="12" r="3" fill="#00F7FF"/>
-    <text x="334" y="16" class="font-mono" font-size="10" fill="#94A3B8">Physical AI &amp; Agent Systems</text>
+    <!-- Pill 3 -->
+    <rect x="365" y="0" width="180" height="24" rx="4" fill="#08101E" stroke="#16273F" stroke-width="0.8"/>
+    <circle cx="377" cy="12" r="3" fill="#A855F7"/>
+    <text x="389" y="16" class="font-mono" font-size="10" fill="#94A3B8">Next.js · Python · C++</text>
 
-    <!-- Right-aligned build slogan -->
-    <text x="848" y="16" text-anchor="end" class="font-mono" font-size="10" fill="#64748B" letter-spacing="1">
+    <!-- Right Slogan -->
+    <text x="848" y="16" text-anchor="end" class="font-mono" font-size="10.5" font-weight="bold" fill="#38BDF8" letter-spacing="1">
       &gt; BUILD. TRAIN. SHIP.
     </text>
   </g>
