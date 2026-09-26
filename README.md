@@ -1,73 +1,78 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=230&color=0:020617,45:0f172a,75:164e63,100:06b6d4&text=L%C3%AA%20Ph%E1%BA%A1m%20Th%C3%A0nh%20%C4%90%E1%BA%A1t&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=SYSTEM%20ENGINEERING%20%E2%80%A2%20FULL-STACK%20%E2%80%A2%20AI%20ENGINEERING&descSize=16&descAlignY=58&animation=twinkling"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=250&color=0:020617,35:0f172a,70:164e63,100:06b6d4&text=L%C3%AA%20Ph%E1%BA%A1m%20Th%C3%A0nh%20%C4%90%E1%BA%A1t&fontSize=44&fontColor=ffffff&fontAlignY=38&desc=SYSTEM%20ENGINEERING%20%E2%80%A2%20AI%20%E2%80%A2%20FULL-STACK&descAlignY=60&descSize=17&animation=twinkling"/>
 
-<br/>
+<br>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=900&color=22D3EE&center=true&vCenter=true&width=800&lines=Building+AI-Powered+Applications;Full-Stack+Developer;Edge+AI+%26+Machine+Learning;Computer+Vision+Enthusiast;Turning+Ideas+Into+Real+Systems"/>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=21&duration=2800&pause=900&color=22D3EE&center=true&vCenter=true&width=850&height=45&lines=System+Engineering+Student;Full-Stack+Developer;AI+%26+Machine+Learning+Enthusiast;Edge+AI+%26+AIoT+Developer;Building+Systems+That+Actually+Work"/>
 
-<br/><br/>
+<br><br>
 
-<img src="https://komarev.com/ghpvc/?username=liliustwocout&label=PROFILE+VIEWS&color=06b6d4&style=for-the-badge"/>
-
-<br/><br/>
-
-<a href="https://github.com/liliustwocout">
-<img src="https://img.shields.io/badge/GitHub-liliustwocout-020617?style=for-the-badge&logo=github&logoColor=22d3ee"/>
-</a>
-<a href="mailto:datpltn205@gmail.com">
-<img src="https://img.shields.io/badge/Email-Contact-020617?style=for-the-badge&logo=gmail&logoColor=22d3ee"/>
-</a>
-<a href="https://www.linkedin.com/in/th%C3%A0nh-%C4%91%E1%BA%A1t-0ba998369/">
-<img src="https://img.shields.io/badge/LinkedIn-Connect-020617?style=for-the-badge&logo=linkedin&logoColor=22d3ee"/>
-</a>
+<img src="https://komarev.com/ghpvc/?username=liliustwocout&label=PROFILE%20VIEWS&color=06b6d4&style=for-the-badge"/>
 
 </div>
 
-<br/>
-
 ---
 
-## ⚡ About Me
+<div align="center">
+
+`SYSTEM ENGINEERING`    `AI ENGINEERING`    `FULL-STACK`    `EDGE AI`
+
+</div>
+
+<br>
+
+## About
 
 <table>
 <tr>
-<td width="55%">
+<td width="58%" valign="top">
 
-### 👋 こんにちは
+### Lê Phạm Thành Đạt
 
-I'm **Lê Phạm Thành Đạt**, a System Engineering student at **Phenikaa University** who enjoys building software that combines **AI, modern web technologies and real-world systems**.
+System Engineering student at **Phenikaa University**, focused on building practical software systems combining **Artificial Intelligence, Full-Stack Development and Edge Computing**.
 
-* 🎓 System Engineering @ Phenikaa University
-* 💻 Full-Stack Developer
-* 🤖 AI / Machine Learning Enthusiast
-* 🌐 Interested in AI-powered Web Applications
-* ⚙️ Exploring Edge AI & AIoT
-* 🇯🇵 Learning Japanese & interested in Japan's tech industry
-* 🎨 Love minimal + futuristic UI
+Currently exploring how AI can move beyond experiments and become part of real-world applications.
+
+<br>
+
+**Current direction**
+
+* Artificial Intelligence
+* Machine Learning
+* Computer Vision
+* Edge AI / AIoT
+* Full-Stack Development
+* System Architecture
+* Modern UI Engineering
+
+<br>
+
+**Languages**
+
+`Vietnamese` `Japanese` `English`
 
 </td>
 
-<td width="45%">
+<td width="42%" valign="top">
 
 ```text
-┌──────────────────────────────┐
-│       SYSTEM STATUS          │
-├──────────────────────────────┤
-│                              │
-│  USER       > THANH_DAT      │
-│  ROLE       > DEVELOPER      │
-│  DOMAIN     > AI / WEB       │
-│  STATUS     > BUILDING...    │
-│                              │
-│  ████████████████░░  90%     │
-│                              │
-│  > Learn                     │
-│  > Build                     │
-│  > Iterate                   │
-│  > Deploy                    │
-│                              │
-└──────────────────────────────┘
+┌──────────────────────────────────┐
+│          SYSTEM PROFILE          │
+├──────────────────────────────────┤
+│                                  │
+│  NAME      LÊ PHẠM THÀNH ĐẠT     │
+│  DOMAIN    AI / WEB / SYSTEMS    │
+│  ROLE      DEVELOPER             │
+│  STATUS    BUILDING              │
+│                                  │
+│  AI        ████████████████░  90%│
+│  WEB       █████████████████ 95% │
+│  SYSTEMS   ███████████████░░ 85% │
+│                                  │
+│  LOCATION  VIETNAM               │
+│                                  │
+└──────────────────────────────────┘
 ```
 
 </td>
@@ -76,84 +81,31 @@ I'm **Lê Phạm Thành Đạt**, a System Engineering student at **Phenikaa Uni
 
 ---
 
-# 🧠 What I'm Building
-
-<div align="center">
-
-### 🤖 AI × 🌐 Web × ⚙️ Edge
-
-</div>
-
-<table>
-<tr>
-<td align="center" width="33%">
-
-### 🧠 AI / ML
-
-Machine Learning
-Computer Vision
-AI Agents
-Edge AI
-
-</td>
-
-<td align="center" width="33%">
-
-### 🌐 Full-Stack
-
-React
-Next.js
-Django
-Node.js
-
-</td>
-
-<td align="center" width="33%">
-
-### ⚙️ Systems
-
-Python
-ESP32
-Raspberry Pi
-AIoT
-
-</td>
-</tr>
-</table>
-
----
-
-# 🛠️ Tech Stack
+## Technology
 
 <div align="center">
 
 ### Languages
 
-<img src="https://skillicons.dev/icons?i=python,typescript,javascript,cpp,c,cs,java&theme=dark" />
+`Python` `TypeScript` `JavaScript` `C` `C++` `C#` `Java`
 
-<br/><br/>
+### Web Engineering
 
-### Frontend & Backend
+`React` `Next.js` `Django` `Node.js` `FastAPI` `Tailwind CSS`
 
-<img src="https://skillicons.dev/icons?i=react,nextjs,django,nodejs,html,css,tailwind&theme=dark" />
+### AI & Data
 
-<br/><br/>
+`Machine Learning` `Computer Vision` `TensorFlow` `PyTorch` `scikit-learn`
 
-### AI / Data / Systems
+### Systems & Infrastructure
 
-<img src="https://skillicons.dev/icons?i=tensorflow,pytorch,opencv,arduino,raspberrypi&theme=dark" />
-
-<br/><br/>
-
-### Tools & Infrastructure
-
-<img src="https://skillicons.dev/icons?i=git,github,docker,vscode,linux,unity&theme=dark" />
+`Raspberry Pi` `ESP32` `Linux` `Docker` `Git` `GitHub`
 
 </div>
 
 ---
 
-# 🚀 Featured Projects
+# Selected Projects
 
 <div align="center">
 
@@ -162,40 +114,103 @@ AIoT
 
 <td width="50%" valign="top">
 
-<h3>🖐️ Sign Language Recognition</h3>
+<h3>Sign Language Recognition</h3>
 
-Real-time AI-based sign language recognition system designed to support communication through computer vision.
+Real-time sign language recognition system designed to support communication through computer vision and machine learning.
 
-<br/>
-
-**Core technologies**
+<br>
 
 `TensorFlow.js` `CNN` `KNN` `Transfer Learning`
 
-<br/><br/>
+<br><br>
 
 <a href="https://github.com/liliustwocout/Sign-Language-Recognition">
-<img src="https://img.shields.io/badge/View_Project-06b6d4?style=for-the-badge&logo=github&logoColor=white"/>
+View Repository
 </a>
 
 </td>
 
 <td width="50%" valign="top">
 
-<h3>🧩 DevShare Lite</h3>
+<h3>DevShare Lite</h3>
 
-A developer community platform for sharing technical knowledge, discussions and useful resources.
+A developer community platform for sharing technical knowledge, discussions and resources.
 
-<br/>
-
-**Core technologies**
+<br>
 
 `Django` `React` `JWT` `SQLite`
 
-<br/><br/>
+<br><br>
 
 <a href="https://github.com/liliustwocout/DevShare-Lite">
-<img src="https://img.shields.io/badge/View_Project-06b6d4?style=for-the-badge&logo=github&logoColor=white"/>
+View Repository
+</a>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td width="50%" valign="top">
+
+<h3>Edge AI Electronic Nose</h3>
+
+Industrial toxic-gas detection system combining electronic nose technology with Edge AI.
+
+The system detects **H2S and NH3**, builds gas fingerprints and performs real-time risk classification through an Edge AI pipeline.
+
+<br>
+
+`ESP32` `Raspberry Pi` `RS-485` `Modbus RTU`
+`RandomForest` `FastAPI` `Firebase` `WISE-IoT`
+
+<br><br>
+
+**Model performance**
+
+```text
+Classification Accuracy     94.18%
+Concentration R²             0.8534
+Real-time Window Accuracy   94.71%
+```
+
+<br>
+
+<a href="https://github.com/liliustwocout/edge-ai-electronic-nose">
+View Repository
+</a>
+
+</td>
+
+<td width="50%" valign="top">
+
+<h3>MAS-Diffusion-Lab</h3>
+
+Research platform for simulating and experimentally evaluating information propagation in multi-agent networks powered by Large Language Models.
+
+The system combines complex-network topologies, LLM agents, semantic drift analysis and information diffusion models.
+
+<br>
+
+`Python` `FastAPI` `Ollama` `NetworkX`
+`Qwen 2.5` `Llama 3` `LLM Agents`
+
+<br><br>
+
+**Research scope**
+
+```text
+Complex Networks
+Information Diffusion
+Semantic Drift
+Multi-Agent Systems
+```
+
+<br>
+
+<a href="https://github.com/liliustwocout/llm-information-propagation">
+View Repository
 </a>
 
 </td>
@@ -207,71 +222,145 @@ A developer community platform for sharing technical knowledge, discussions and 
 
 ---
 
-# 🧪 Current Focus
+# Edge AI Electronic Nose
 
 <div align="center">
 
 ```text
-AI Engineering
-     │
-     ├── Machine Learning
-     ├── Computer Vision
-     ├── Edge AI
-     └── AI Agents
-           │
-           ▼
-     Full-Stack Systems
-           │
-           ├── Next.js
-           ├── React
-           ├── Django
-           └── Python
-           │
-           ▼
-       Real Products
+                    INDUSTRIAL FIELD
+                          │
+                  H2S / NH3 DETECTION
+                          │
+                          ▼
+                ┌──────────────────┐
+                │  ESP32 SENSOR    │
+                │      NODES       │
+                └────────┬─────────┘
+                         │
+                    RS-485 / Modbus
+                         │
+                         ▼
+                ┌──────────────────┐
+                │  RASPBERRY PI    │
+                │    EDGE AI       │
+                └────────┬─────────┘
+                         │
+                RandomForest Model
+                         │
+                         ▼
+              ┌─────────────────────┐
+              │  RISK CLASSIFICATION│
+              │                     │
+              │ Normal              │
+              │ Warning             │
+              │ Hazardous           │
+              │ Emergency           │
+              └──────────┬──────────┘
+                         │
+                         ▼
+                REAL-TIME DASHBOARD
 ```
 
 </div>
 
-<br/>
+The architecture uses ESP32 sensor nodes, an RS-485 Modbus RTU communication layer, Raspberry Pi Edge AI processing and cloud synchronization through Firebase / WISE-IoT.
 
-* 🧠 Machine Learning & Computer Vision
-* ⚡ Edge AI / AIoT
-* ⚛️ Next.js + TypeScript
-* 🐍 Python + Django
-* 🐳 Docker & CI/CD
-* 🎨 Modern UI/UX
-* 🤖 AI integration into real-world applications
+The Edge AI pipeline performs filtering, temperature/humidity compensation, feature extraction and dual-mode RandomForest inference for both full-pulse and streaming-window analysis.
 
 ---
 
-# 📊 GitHub Analytics
+# MAS-Diffusion-Lab
 
 <div align="center">
 
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=liliustwocout&show_icons=true&hide_border=true&bg_color=020617&title_color=22d3ee&text_color=cbd5e1&icon_color=22d3ee&ring_color=22d3ee&include_all_commits=true&count_private=true"/>
+```text
+                  INITIAL INFORMATION
+                          │
+                          ▼
+                 MULTI-AGENT NETWORK
+                          │
+            ┌─────────────┼─────────────┐
+            │             │             │
+            ▼             ▼             ▼
+          AGENT         AGENT         AGENT
+            │             │             │
+            └─────────────┼─────────────┘
+                          │
+                          ▼
+                   HOP-BY-HOP
+                   PROPAGATION
+                          │
+             ┌────────────┴────────────┐
+             │                         │
+             ▼                         ▼
+       SEMANTIC DRIFT            OPINION STATE
+             │                         │
+             └────────────┬────────────┘
+                          ▼
+                 EXPERIMENT ANALYSIS
+```
 
-<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=liliustwocout&layout=compact&hide_border=true&bg_color=020617&title_color=22d3ee&text_color=cbd5e1&icon_color=22d3ee&langs_count=8"/>
+</div>
 
-<br/><br/>
+The research project investigates semantic drift, network topology and intervention strategies in LLM-based multi-agent systems. It supports network structures including **ER, WS, BA and SBM**, together with agent personas and diffusion models such as ICM, LTM and SIR/SIS.
+The system connects locally hosted models through Ollama and can integrate cloud AI APIs, while recording experimental traces and statistical results.
 
-<img width="70%" src="https://streak-stats.demolab.com/?user=liliustwocout&theme=transparent&hide_border=true&background=020617&ring=22d3ee&fire=67e8f9&currStreakLabel=22d3ee&sideLabels=cbd5e1&dates=64748b"/>
+---
+
+# Engineering Focus
+
+<div align="center">
+
+```text
+                         AI ENGINEERING
+                               │
+              ┌────────────────┼────────────────┐
+              │                │                │
+              ▼                ▼                ▼
+        MACHINE LEARNING   COMPUTER VISION   LLM SYSTEMS
+              │                │                │
+              └────────────────┼────────────────┘
+                               │
+                               ▼
+                         EDGE COMPUTING
+                               │
+              ┌────────────────┼────────────────┐
+              │                │                │
+              ▼                ▼                ▼
+          RASPBERRY PI       ESP32          AIoT
+              │                │                │
+              └────────────────┼────────────────┘
+                               │
+                               ▼
+                        FULL-STACK SYSTEM
+                               │
+              ┌────────────────┼────────────────┐
+              │                │                │
+              ▼                ▼                ▼
+           FRONTEND         BACKEND          CLOUD
+```
 
 </div>
 
 ---
 
-# 🏆 Achievements
+# GitHub Analytics
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=liliustwocout&theme=algolia&no-frame=true&no-bg=true&margin-w=8&row=1&column=6"/>
+<img height="180" src="https://github-readme-stats.vercel.app/api?username=liliustwocout&show_icons=true&hide_border=true&bg_color=020617&title_color=22d3ee&text_color=cbd5e1&icon_color=22d3ee&include_all_commits=true&count_private=true"/>
+
+<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=liliustwocout&layout=compact&hide_border=true&bg_color=020617&title_color=22d3ee&text_color=cbd5e1&langs_count=8"/>
+
+<br><br>
+
+<img width="72%" src="https://streak-stats.demolab.com/?user=liliustwocout&theme=transparent&hide_border=true&background=020617&ring=22d3ee&fire=67e8f9&currStreakLabel=22d3ee&sideLabels=cbd5e1&dates=64748b"/>
 
 </div>
 
 ---
 
-# 🐍 Contribution Matrix
+# Contribution
 
 <div align="center">
 
@@ -281,64 +370,60 @@ AI Engineering
 
 ---
 
-# 🌱 Learning Journey
+# Current Direction
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=rect&height=80&color=gradient&customColorList=12&text=LEARN%20%E2%86%92%20BUILD%20%E2%86%92%20BREAK%20%E2%86%92%20IMPROVE&fontSize=20&fontColor=ffffff&animation=twinkling"/>
+```text
+LEARN
+  ↓
+BUILD
+  ↓
+EXPERIMENT
+  ↓
+MEASURE
+  ↓
+IMPROVE
+  ↓
+DEPLOY
+```
 
-</div>
+<br>
 
-<br/>
-
-<div align="center">
-
-|      🧠 AI      |   🌐 Web   |  ⚙️ Systems  | 🚀 Engineering |
-| :-------------: | :--------: | :----------: | :------------: |
-|        ML       |   Next.js  | Raspberry Pi |     Docker     |
-| Computer Vision |    React   |     ESP32    |      CI/CD     |
-|     Edge AI     |   Django   |     AIoT     |  System Design |
-|    AI Agents    | TypeScript |     Linux    |       DX       |
+`AI`    `Edge Computing`    `Full-Stack`    `System Design`
 
 </div>
 
 ---
 
-# 📫 Let's Connect
+# Contact
 
 <div align="center">
 
 <a href="mailto:datpltn205@gmail.com">
-<img src="https://img.shields.io/badge/GMAIL-020617?style=for-the-badge&logo=gmail&logoColor=22d3ee"/>
+<img src="https://img.shields.io/badge/EMAIL-020617?style=for-the-badge&labelColor=020617&color=164e63"/>
 </a>
 
 <a href="https://www.linkedin.com/in/th%C3%A0nh-%C4%91%E1%BA%A1t-0ba998369/">
-<img src="https://img.shields.io/badge/LINKEDIN-020617?style=for-the-badge&logo=linkedin&logoColor=22d3ee"/>
+<img src="https://img.shields.io/badge/LINKEDIN-020617?style=for-the-badge&labelColor=020617&color=164e63"/>
 </a>
 
 <a href="https://github.com/liliustwocout">
-<img src="https://img.shields.io/badge/GITHUB-020617?style=for-the-badge&logo=github&logoColor=22d3ee"/>
+<img src="https://img.shields.io/badge/GITHUB-020617?style=for-the-badge&labelColor=020617&color=164e63"/>
 </a>
 
 </div>
 
-<br/>
+<br>
 
 <div align="center">
 
-### 「コードで未来を作る。」
+## 「コードで未来を作る。」
 
-<sub>Build systems. Explore AI. Create impact.</sub>
+`Build systems. Explore AI. Create impact.`
 
-<br/><br/>
+<br><br>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=120&color=0:06b6d4,50:164e63,100:020617&section=footer"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=140&color=0:06b6d4,45:164e63,75:0f172a,100:020617&section=footer&animation=twinkling"/>
 
 </div>
-
-<!--
-  ╔══════════════════════════════════════════════╗
-  ║       LÊ PHẠM THÀNH ĐẠT • 2026              ║
-  ║       AI × WEB × SYSTEMS                    ║
-  ╚══════════════════════════════════════════════╝
--->
