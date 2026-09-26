@@ -138,8 +138,8 @@ Qwen Generation
 
 <div align="center">
 
-<img height="175" src="https://github-readme-stats.vercel.app/api?username=liliustwocout&show_icons=true&hide_border=true&bg_color=050A0F&title_color=00F7FF&text_color=B8C7D9&icon_color=00F7FF&ring_color=00F7FF"/>
-<img height="175" src="https://github-readme-stats.vercel.app/api/top-langs/?username=liliustwocout&layout=compact&hide_border=true&bg_color=050A0F&title_color=00F7FF&text_color=B8C7D9"/>
+<img height="175" src="https://github-readme-stats-fast.vercel.app/api?username=liliustwocout&show_icons=true&hide_border=true&bg_color=050A0F&title_color=00F7FF&text_color=B8C7D9&icon_color=00F7FF&ring_color=00F7FF"/>
+<img height="175" src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=liliustwocout&layout=compact&hide_border=true&bg_color=050A0F&title_color=00F7FF&text_color=B8C7D9"/>
 
 <br><br>
 
