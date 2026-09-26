@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 50" width="240" height="50" fill="none">
+  <defs>
+    <linearGradient id="inBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070B14"/>
+      <stop offset="60%" stop-color="#081428"/>
+      <stop offset="100%" stop-color="#04070E"/>
+    </linearGradient>
+    <linearGradient id="inBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0A66C2" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#00F7FF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#0A66C2" stop-opacity="0.8"/>
+    </linearGradient>
+    <filter id="blueGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .font-mono { font-family: 'JetBrains Mono', 'Fira Code', monospace; }
+    .font-sans { font-family: 'Syne', 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  </style>
+
+  <!-- Button Frame -->
+  <rect x="2" y="2" width="236" height="46" rx="8" fill="url(#inBg)"/>
+  <rect x="2" y="2" width="236" height="46" rx="8" fill="none" stroke="url(#inBorder)" stroke-width="1.2">
+    <animate attributeName="stroke-opacity" values="0.9;0.4;0.9" dur="2.5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Traveling Laser Dash -->
+  <rect x="2" y="2" width="236" height="46" rx="8" fill="none" stroke="#00F7FF" stroke-width="1.6" stroke-dasharray="25 150">
+    <animate attributeName="stroke-dashoffset" values="0;-350" dur="2.5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Tech Corners -->
+  <path d="M 6 6 L 6 12 M 6 6 L 12 6" stroke="#0A66C2" stroke-width="1.2"/>
+  <path d="M 234 6 L 234 12 M 234 6 L 228 6" stroke="#0A66C2" stroke-width="1.2"/>
+  <path d="M 6 44 L 6 38 M 6 44 L 12 44" stroke="#0A66C2" stroke-width="1.2"/>
+  <path d="M 234 44 L 234 38 M 234 44 L 228 44" stroke="#0A66C2" stroke-width="1.2"/>
+
+  <!-- LinkedIn Icon -->
+  <g transform="translate(16, 14)">
+    <rect x="2" y="2" width="18" height="18" rx="3" fill="#0A66C2"/>
+    <text x="6" y="16" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF">in</text>
+  </g>
+
+  <!-- Labels -->
+  <text x="46" y="22" class="font-sans" font-size="12" font-weight="bold" fill="#F8FAFC" letter-spacing="1">LINKEDIN</text>
+  <text x="46" y="36" class="font-mono" font-size="8.5" fill="#94A3B8">/in/thành-đạt</text>
+
+  <!-- Action Arrow -->
+  <text x="220" y="28" text-anchor="end" class="font-mono" font-size="11" font-weight="bold" fill="#00F7FF" filter="url(#blueGlow)">↗</text>
+</svg>

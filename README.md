@@ -155,21 +155,19 @@ Qwen Generation
 <div align="center">
 
 <a href="mailto:datpltn205@gmail.com">
-<img src="https://img.shields.io/badge/Gmail-050A0F?style=for-the-badge&logo=gmail&logoColor=00F7FF"/>
+<img src="./assets/btn-gmail.svg" height="46"/>
 </a>
-<a href="https://www.linkedin.com/in/th%C3%A0nh-%C4%91%E1%BA%A1t-0ba998369/">
-<img src="https://img.shields.io/badge/LinkedIn-050A0F?style=for-the-badge&logo=linkedin&logoColor=00F7FF"/>
+&nbsp;
+<a href="https://www.linkedin.com/in/th%C3%A0nh-%C4%91%E1%BA%A1t-0ba998369/" target="_blank">
+<img src="./assets/btn-linkedin.svg" height="46"/>
 </a>
-<a href="https://github.com/liliustwocout">
-<img src="https://img.shields.io/badge/GitHub-050A0F?style=for-the-badge&logo=github&logoColor=00F7FF"/>
+&nbsp;
+<a href="https://github.com/liliustwocout" target="_blank">
+<img src="./assets/btn-github.svg" height="46"/>
 </a>
 
 <br><br>
 
-```text
-> BUILD SYSTEMS.
-> TRAIN MODELS.
-> SHIP INTELLIGENCE.
-```
+<img src="./assets/footer.svg" width="100%"/>
 
 </div>
