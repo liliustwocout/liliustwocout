@@ -1,0 +1,219 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 290" width="100%" height="auto" fill="none">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="masBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080614"/>
+      <stop offset="60%" stop-color="#110B24"/>
+      <stop offset="100%" stop-color="#05030D"/>
+    </linearGradient>
+
+    <!-- Border Glow Gradient -->
+    <linearGradient id="masBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.85"/>
+      <stop offset="50%" stop-color="#6366F1" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#00F7FF" stop-opacity="0.75"/>
+    </linearGradient>
+
+    <!-- Edge Pulse Gradient -->
+    <linearGradient id="netPulse" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#C084FC"/>
+      <stop offset="100%" stop-color="#00F7FF" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="purpleGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="particleGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <style>
+    .font-mono {
+      font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace;
+    }
+    .font-sans {
+      font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    @keyframes pulseMasBorder {
+      0%, 100% { stroke-opacity: 0.85; }
+      50% { stroke-opacity: 0.35; }
+    }
+    .border-glow-mas {
+      animation: pulseMasBorder 3.2s infinite ease-in-out;
+    }
+  </style>
+
+  <!-- Card Body -->
+  <rect x="2" y="2" width="436" height="286" rx="12" fill="url(#masBg)"/>
+
+  <!-- Subtle Cyber Pattern -->
+  <g opacity="0.08">
+    <line x1="2" y1="50" x2="438" y2="50" stroke="#A855F7" stroke-width="0.8"/>
+    <line x1="2" y1="130" x2="438" y2="130" stroke="#A855F7" stroke-width="0.8"/>
+    <line x1="2" y1="210" x2="438" y2="210" stroke="#A855F7" stroke-width="0.8"/>
+    <line x1="220" y1="2" x2="220" y2="288" stroke="#A855F7" stroke-width="0.8" stroke-dasharray="2,4"/>
+  </g>
+
+  <!-- Glowing Border -->
+  <rect class="border-glow-mas" x="2" y="2" width="436" height="286" rx="12" fill="none" stroke="url(#masBorder)" stroke-width="1.4">
+    <animate attributeName="stroke-opacity" values="0.85;0.35;0.85" dur="3.2s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Tech Corner Markers -->
+  <path d="M 12 12 L 12 20 M 12 12 L 20 12" stroke="#A855F7" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M 428 12 L 428 20 M 428 12 L 420 12" stroke="#A855F7" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M 12 278 L 12 270 M 12 278 L 20 278" stroke="#A855F7" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M 428 278 L 428 270 M 428 278 L 420 278" stroke="#A855F7" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Card Header -->
+  <g transform="translate(20, 24)">
+    <!-- Category Pill -->
+    <rect x="0" y="0" width="144" height="20" rx="4" fill="#200B33" stroke="#A855F7" stroke-opacity="0.5" stroke-width="0.8"/>
+    <circle cx="8" cy="10" r="3" fill="#C084FC">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="17" y="14" class="font-mono" font-size="9" fill="#E9D5FF" font-weight="bold" letter-spacing="0.5">AI RESEARCH / SWARM</text>
+
+    <!-- Top-Right Status -->
+    <rect x="290" y="0" width="110" height="20" rx="4" fill="#130A24" stroke="#2E1B4D" stroke-width="0.8"/>
+    <text x="345" y="14" text-anchor="middle" class="font-mono" font-size="9" fill="#C084FC">Ollama + Qwen</text>
+  </g>
+
+  <!-- Project Title & Subtitle -->
+  <g transform="translate(20, 68)">
+    <text x="0" y="0" class="font-sans" font-size="18" font-weight="700" fill="#F8FAFC" letter-spacing="0.5">
+      MAS-Diffusion-Lab
+    </text>
+    <text x="0" y="18" class="font-mono" font-size="10.5" fill="#C4B5FD">
+      LLM Multi-Agent Diffusion &amp; Semantic Drift Research
+    </text>
+  </g>
+
+  <!-- Centerpiece: Agent Network Swarm Graph HUD -->
+  <g transform="translate(20, 102)">
+    <rect x="0" y="0" width="400" height="66" rx="6" fill="#06030F" stroke="#24153E" stroke-width="0.8"/>
+
+    <!-- Network Topology Connections -->
+    <line x1="60" y1="33" x2="140" y2="18" stroke="#6D28D9" stroke-width="1.2" stroke-opacity="0.6"/>
+    <line x1="60" y1="33" x2="140" y2="48" stroke="#6D28D9" stroke-width="1.2" stroke-opacity="0.6"/>
+    <line x1="140" y1="18" x2="220" y2="33" stroke="#6D28D9" stroke-width="1.2" stroke-opacity="0.6"/>
+    <line x1="140" y1="48" x2="220" y2="33" stroke="#6D28D9" stroke-width="1.2" stroke-opacity="0.6"/>
+    <line x1="220" y1="33" x2="300" y2="20" stroke="#6D28D9" stroke-width="1.2" stroke-opacity="0.6"/>
+    <line x1="220" y1="33" x2="300" y2="46" stroke="#6D28D9" stroke-width="1.2" stroke-opacity="0.6"/>
+    <line x1="300" y1="20" x2="350" y2="33" stroke="#6D28D9" stroke-width="1.2" stroke-opacity="0.6"/>
+    <line x1="300" y1="46" x2="350" y2="33" stroke="#6D28D9" stroke-width="1.2" stroke-opacity="0.6"/>
+
+    <!-- Diffusion Paths with Animated Pulses -->
+    <!-- Pulse 1: Source to Upper Branch -->
+    <circle r="3" fill="#00F7FF" filter="url(#particleGlow)">
+      <animateMotion dur="2.4s" repeatCount="indefinite" path="M 60 33 L 140 18 L 220 33 L 300 20 L 350 33"/>
+    </circle>
+
+    <!-- Pulse 2: Source to Lower Branch -->
+    <circle r="2.8" fill="#C084FC" filter="url(#particleGlow)">
+      <animateMotion dur="2.8s" repeatCount="indefinite" path="M 60 33 L 140 48 L 220 33 L 300 46 L 350 33"/>
+    </circle>
+
+    <!-- Agent Nodes -->
+    <!-- Node Seed -->
+    <g transform="translate(60, 33)">
+      <circle r="7" fill="#2E1065" stroke="#A855F7" stroke-width="1.5"/>
+      <circle r="3" fill="#C084FC"/>
+      <text y="-10" text-anchor="middle" class="font-mono" font-size="7.5" fill="#A855F7">A0:Seed</text>
+    </g>
+
+    <!-- Node 1 -->
+    <g transform="translate(140, 18)">
+      <circle r="6" fill="#1E1B4B" stroke="#6366F1" stroke-width="1.2"/>
+      <circle r="2.5" fill="#818CF8"/>
+    </g>
+    <!-- Node 2 -->
+    <g transform="translate(140, 48)">
+      <circle r="6" fill="#1E1B4B" stroke="#6366F1" stroke-width="1.2"/>
+      <circle r="2.5" fill="#818CF8"/>
+    </g>
+
+    <!-- Node Hub (Synthesizer) -->
+    <g transform="translate(220, 33)">
+      <circle r="8" fill="#3B0764" stroke="#00F7FF" stroke-width="1.5" filter="url(#purpleGlow)"/>
+      <circle r="3.5" fill="#00F7FF"/>
+      <text y="-11" text-anchor="middle" class="font-mono" font-size="7.5" fill="#00F7FF">Hub Agent</text>
+    </g>
+
+    <!-- Node 3 -->
+    <g transform="translate(300, 20)">
+      <circle r="6" fill="#1E1B4B" stroke="#818CF8" stroke-width="1.2"/>
+      <circle r="2.5" fill="#A5B4FC"/>
+    </g>
+    <!-- Node 4 -->
+    <g transform="translate(300, 46)">
+      <circle r="6" fill="#1E1B4B" stroke="#818CF8" stroke-width="1.2"/>
+      <circle r="2.5" fill="#A5B4FC"/>
+    </g>
+
+    <!-- Sink Node -->
+    <g transform="translate(350, 33)">
+      <circle r="7" fill="#1E1B4B" stroke="#A855F7" stroke-width="1.5"/>
+      <circle r="3" fill="#E879F9"/>
+      <text y="-10" text-anchor="middle" class="font-mono" font-size="7.5" fill="#E879F9">Consensus</text>
+    </g>
+
+    <!-- Overlay Telemetry Label -->
+    <text x="12" y="14" class="font-mono" font-size="8" fill="#A855F7">NETWORK TOPOLOGY: SCALE-FREE (BA)</text>
+    <text x="388" y="14" text-anchor="end" class="font-mono" font-size="8" fill="#00F7FF">DIFFUSION: ACTIVE</text>
+  </g>
+
+  <!-- Metrics Grid (3 Key Benchmarks) -->
+  <g transform="translate(20, 180)">
+    <!-- Metric 1: Processing Speed -->
+    <g transform="translate(0, 0)">
+      <rect width="126" height="48" rx="6" fill="#100A24" stroke="#251648" stroke-width="0.8"/>
+      <text x="12" y="22" class="font-mono" font-size="14.5" font-weight="bold" fill="#C084FC">2100+ tok/s</text>
+      <text x="12" y="38" class="font-mono" font-size="8" fill="#A5B4FC">Prompt Ingestion</text>
+    </g>
+
+    <!-- Metric 2: Generation Speed -->
+    <g transform="translate(137, 0)">
+      <rect width="126" height="48" rx="6" fill="#100A24" stroke="#251648" stroke-width="0.8"/>
+      <text x="12" y="22" class="font-mono" font-size="14.5" font-weight="bold" fill="#00F7FF">58–65 tok/s</text>
+      <text x="12" y="38" class="font-mono" font-size="8" fill="#A5B4FC">Qwen Generation</text>
+    </g>
+
+    <!-- Metric 3: Personas & Drift -->
+    <g transform="translate(274, 0)">
+      <rect width="126" height="48" rx="6" fill="#100A24" stroke="#251648" stroke-width="0.8"/>
+      <text x="12" y="22" class="font-mono" font-size="14.5" font-weight="bold" fill="#38BDF8">BDI Swarm</text>
+      <text x="12" y="38" class="font-mono" font-size="8" fill="#A5B4FC">Semantic Drift</text>
+    </g>
+  </g>
+
+  <!-- Tech Tags Footer -->
+  <g transform="translate(20, 244)">
+    <!-- Tag 1 -->
+    <rect x="0" y="0" width="80" height="20" rx="3" fill="#150C2E" stroke="#2D1A5E" stroke-width="0.8"/>
+    <text x="40" y="14" text-anchor="middle" class="font-mono" font-size="8.5" fill="#DDD6FE">Multi-Agent</text>
+
+    <!-- Tag 2 -->
+    <rect x="88" y="0" width="60" height="20" rx="3" fill="#150C2E" stroke="#2D1A5E" stroke-width="0.8"/>
+    <text x="118" y="14" text-anchor="middle" class="font-mono" font-size="8.5" fill="#DDD6FE">Ollama</text>
+
+    <!-- Tag 3 -->
+    <rect x="156" y="0" width="70" height="20" rx="3" fill="#150C2E" stroke="#2D1A5E" stroke-width="0.8"/>
+    <text x="191" y="14" text-anchor="middle" class="font-mono" font-size="8.5" fill="#DDD6FE">Qwen 2.5</text>
+
+    <!-- Tag 4 -->
+    <rect x="234" y="0" width="90" height="20" rx="3" fill="#150C2E" stroke="#2D1A5E" stroke-width="0.8"/>
+    <text x="279" y="14" text-anchor="middle" class="font-mono" font-size="8.5" fill="#DDD6FE">Network Sci</text>
+
+    <!-- View Link Indicator -->
+    <text x="400" y="14" text-anchor="end" class="font-mono" font-size="10" font-weight="bold" fill="#C084FC">
+      RESEARCH →
+    </text>
+  </g>
+</svg>
