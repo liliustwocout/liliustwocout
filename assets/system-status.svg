@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 120" width="100%" height="auto" fill="none">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="statusBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050812"/>
+      <stop offset="50%" stop-color="#08101E"/>
+      <stop offset="100%" stop-color="#03050A"/>
+    </linearGradient>
+
+    <!-- Border Gradient -->
+    <linearGradient id="statusBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F7FF" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0.7"/>
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Grid Pattern -->
+    <pattern id="statusGrid" width="18" height="18" patternUnits="userSpaceOnUse">
+      <path d="M 18 0 L 0 0 0 18" fill="none" stroke="#00F7FF" stroke-width="0.5" stroke-opacity="0.06"/>
+    </pattern>
+  </defs>
+
+  <style>
+    .font-mono {
+      font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace;
+    }
+    .font-sans {
+      font-family: 'Syne', 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    @keyframes pulseLed {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.35; transform: scale(0.9); }
+    }
+    .live-dot {
+      animation: pulseLed 1.8s infinite ease-in-out;
+      transform-origin: center;
+    }
+  </style>
+
+  <!-- Container Base -->
+  <rect x="2" y="2" width="916" height="116" rx="10" fill="url(#statusBg)"/>
+  <rect x="2" y="2" width="916" height="116" rx="10" fill="url(#statusGrid)"/>
+  <rect x="2" y="2" width="916" height="116" rx="10" fill="none" stroke="url(#statusBorder)" stroke-width="1.2">
+    <animate attributeName="stroke-opacity" values="0.85;0.4;0.85" dur="3s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Flowing Border Laser Beam -->
+  <rect x="2" y="2" width="916" height="116" rx="10" fill="none" stroke="#00F7FF" stroke-width="1.8" stroke-dasharray="50 350" stroke-opacity="0.8">
+    <animate attributeName="stroke-dashoffset" values="0;-800" dur="3.5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Corner Reticles -->
+  <path d="M 10 10 L 10 18 M 10 10 L 18 10" stroke="#00F7FF" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M 910 10 L 910 18 M 910 10 L 902 10" stroke="#00F7FF" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M 10 110 L 10 102 M 10 110 L 18 110" stroke="#00F7FF" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M 910 110 L 910 102 M 910 110 L 902 110" stroke="#00F7FF" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- ==================== COLUMN 1: IDENTITY & AFFILIATION ==================== -->
+  <g transform="translate(26, 20)">
+    <text class="font-mono" font-size="9" font-weight="bold" fill="#38BDF8" letter-spacing="1">
+      &gt; NODE_OPERATOR
+    </text>
+    <text x="0" y="28" class="font-sans" font-size="18" font-weight="800" fill="#F8FAFC" letter-spacing="0.5">
+      Lê Phạm Thành Đạt
+    </text>
+    <g transform="translate(0, 42)">
+      <rect x="0" y="0" width="248" height="22" rx="4" fill="#041824" stroke="#0E3348" stroke-width="0.8"/>
+      <circle cx="10" cy="11" r="3" fill="#00F7FF"/>
+      <text x="20" y="15" class="font-mono" font-size="9" fill="#94A3B8">
+        Phenikaa Univ <tspan fill="#38BDF8">· System Engineering</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- Divider 1 -->
+  <line x1="300" y1="20" x2="300" y2="100" stroke="#14243B" stroke-width="1" stroke-dasharray="3,3"/>
+
+  <!-- ==================== COLUMN 2: ACTIVE PIPELINES ==================== -->
+  <g transform="translate(325, 20)">
+    <text class="font-mono" font-size="9" font-weight="bold" fill="#00F7FF" letter-spacing="1">
+      &gt; ACTIVE_PIPELINES
+    </text>
+    
+    <!-- Item 1: Edge AI -->
+    <g transform="translate(0, 16)">
+      <rect width="280" height="20" rx="3" fill="#051926" stroke="#0B374E" stroke-width="0.7"/>
+      <circle class="live-dot" cx="10" cy="10" r="2.8" fill="#10B981"/>
+      <text x="20" y="14" class="font-mono" font-size="9" fill="#E2E8F0">
+        Edge AI &amp; E-Nose <tspan fill="#00F7FF">[94.18% Acc · Live]</tspan>
+      </text>
+    </g>
+
+    <!-- Item 2: MAS Lab -->
+    <g transform="translate(0, 42)">
+      <rect width="280" height="20" rx="3" fill="#140924" stroke="#2B144E" stroke-width="0.7"/>
+      <circle class="live-dot" cx="10" cy="10" r="2.8" fill="#C084FC"/>
+      <text x="20" y="14" class="font-mono" font-size="9" fill="#E2E8F0">
+        MAS-Diffusion-Lab <tspan fill="#C084FC">[2100+ tok/s · Qwen]</tspan>
+      </text>
+    </g>
+
+    <!-- Item 3: Full Stack -->
+    <g transform="translate(0, 68)">
+      <rect width="280" height="20" rx="3" fill="#051424" stroke="#122A48" stroke-width="0.7"/>
+      <circle class="live-dot" cx="10" cy="10" r="2.8" fill="#38BDF8"/>
+      <text x="20" y="14" class="font-mono" font-size="9" fill="#E2E8F0">
+        Physical Intelligence <tspan fill="#38BDF8">[Next.js · AIoT]</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- Divider 2 -->
+  <line x1="630" y1="20" x2="630" y2="100" stroke="#14243B" stroke-width="1" stroke-dasharray="3,3"/>
+
+  <!-- ==================== COLUMN 3: TELEMETRY & STATUS ==================== -->
+  <g transform="translate(655, 20)">
+    <text class="font-mono" font-size="9" font-weight="bold" fill="#10B981" letter-spacing="1">
+      &gt; RUNTIME_STATE
+    </text>
+
+    <!-- Status Pill -->
+    <g transform="translate(0, 16)">
+      <rect width="235" height="24" rx="4" fill="#032014" stroke="#054D2B" stroke-width="0.8"/>
+      <circle class="live-dot" cx="14" cy="12" r="3.5" fill="#10B981" filter="url(#neonGlow)"/>
+      <text x="26" y="16" class="font-mono" font-size="9.5" font-weight="bold" fill="#10B981" letter-spacing="0.5">
+        STATUS :: OPERATIONAL
+      </text>
+    </g>
+
+    <!-- Telemetry Details -->
+    <g transform="translate(0, 50)">
+      <text class="font-mono" font-size="9" fill="#64748B">
+        TARGET: <tspan fill="#F1F5F9">Building Real-Time AI Systems</tspan>
+      </text>
+      <text x="0" y="18" class="font-mono" font-size="9" fill="#64748B">
+        GEO: <tspan fill="#38BDF8">Vietnam (20°58'N 105°45'E)</tspan>
+      </text>
+      <text x="0" y="34" class="font-mono" font-size="8.5" fill="#00F7FF">
+        LATENCY: &lt; 120ms · ZERO DEGRADATION
+      </text>
+    </g>
+  </g>
+</svg>

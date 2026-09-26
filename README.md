@@ -12,14 +12,11 @@
 
 ## System Status
 
-```text
-┌──────────────────────────────────────────────────────────────────────────────┐
-│  NAME        :: Lê Phạm Thành Đạt                                            │
-│  ROLE        :: AI Engineer · System Engineering (Phenikaa University)       │
-│  CORE        :: Edge AI · Multi-Agent Research · Full-Stack Systems          │
-│  STATUS      :: [ONLINE] Building Real-Time Physical Intelligence            │
-└──────────────────────────────────────────────────────────────────────────────┘
-```
+<div align="center">
+
+<img src="./assets/system-status.svg" width="100%"/>
+
+</div>
 
 ---
 
